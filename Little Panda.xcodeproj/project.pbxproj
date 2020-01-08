@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DD8F8C29A993692BE2B6133 /* Pods_Little_Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */; };
+		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
+		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
+		A5C30A3723C68CDD00F4F7B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3623C68CDD00F4F7B0 /* ViewController.swift */; };
+		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
+		A5C30A3C23C68CDE00F4F7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3B23C68CDE00F4F7B0 /* Assets.xcassets */; };
+		A5C30A3F23C68CDE00F4F7B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3D23C68CDE00F4F7B0 /* LaunchScreen.storyboard */; };
+		A5C30A4A23C68CDE00F4F7B0 /* Little_PandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A4923C68CDE00F4F7B0 /* Little_PandaTests.swift */; };
+		A5C30A4F23C68CDE00F4F7B0 /* Little Panda WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A5C30A4E23C68CDE00F4F7B0 /* Little Panda WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5C30A5523C68CDE00F4F7B0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A5323C68CDE00F4F7B0 /* Interface.storyboard */; };
+		A5C30A5723C68CDF00F4F7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A5623C68CDF00F4F7B0 /* Assets.xcassets */; };
+		A5C30A5E23C68CDF00F4F7B0 /* Little Panda WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5C30A5D23C68CDF00F4F7B0 /* Little Panda WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5C30A6323C68CDF00F4F7B0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A6223C68CDF00F4F7B0 /* InterfaceController.swift */; };
+		A5C30A6523C68CDF00F4F7B0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A6423C68CDF00F4F7B0 /* ExtensionDelegate.swift */; };
+		A5C30A6723C68CDF00F4F7B0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A6623C68CDF00F4F7B0 /* NotificationController.swift */; };
+		A5C30A6923C68CDF00F4F7B0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A6823C68CDF00F4F7B0 /* ComplicationController.swift */; };
+		A5C30A6B23C68CDF00F4F7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A6A23C68CDF00F4F7B0 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5C30A4623C68CDE00F4F7B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C30A2723C68CDD00F4F7B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C30A2E23C68CDD00F4F7B0;
+			remoteInfo = "Little Panda";
+		};
+		A5C30A5023C68CDE00F4F7B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C30A2723C68CDD00F4F7B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C30A4D23C68CDE00F4F7B0;
+			remoteInfo = "Little Panda WatchKit App";
+		};
+		A5C30A5F23C68CDF00F4F7B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C30A2723C68CDD00F4F7B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C30A5C23C68CDF00F4F7B0;
+			remoteInfo = "Little Panda WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5C30A7323C68CE000F4F7B0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5C30A5E23C68CDF00F4F7B0 /* Little Panda WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C30A7723C68CE000F4F7B0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A5C30A4F23C68CDE00F4F7B0 /* Little Panda WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F0CE0C16916A360A5AADE50 /* Pods-Little Panda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Panda.release.xcconfig"; path = "Target Support Files/Pods-Little Panda/Pods-Little Panda.release.xcconfig"; sourceTree = "<group>"; };
+		43C318133240756A30520F53 /* Pods-Little Panda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Panda.debug.xcconfig"; path = "Target Support Files/Pods-Little Panda/Pods-Little Panda.debug.xcconfig"; sourceTree = "<group>"; };
+		A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A5C30A3623C68CDD00F4F7B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5C30A3923C68CDD00F4F7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5C30A3B23C68CDE00F4F7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C30A3E23C68CDE00F4F7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5C30A4023C68CDE00F4F7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C30A4523C68CDE00F4F7B0 /* Little PandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Little PandaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C30A4923C68CDE00F4F7B0 /* Little_PandaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_PandaTests.swift; sourceTree = "<group>"; };
+		A5C30A4B23C68CDE00F4F7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C30A4E23C68CDE00F4F7B0 /* Little Panda WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C30A5423C68CDE00F4F7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A5C30A5623C68CDF00F4F7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C30A5823C68CDF00F4F7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C30A5D23C68CDF00F4F7B0 /* Little Panda WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Little Panda WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C30A6223C68CDF00F4F7B0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A5C30A6423C68CDF00F4F7B0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A5C30A6623C68CDF00F4F7B0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A5C30A6823C68CDF00F4F7B0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A5C30A6A23C68CDF00F4F7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C30A6C23C68CE000F4F7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C30A6D23C68CE000F4F7B0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Little_Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5C30A2C23C68CDD00F4F7B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD8F8C29A993692BE2B6133 /* Pods_Little_Panda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C30A4223C68CDE00F4F7B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C30A5A23C68CDF00F4F7B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8F7F3024E09339F8B7EBAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34DF0BF96387C5984E48ECC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43C318133240756A30520F53 /* Pods-Little Panda.debug.xcconfig */,
+				3F0CE0C16916A360A5AADE50 /* Pods-Little Panda.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5C30A2623C68CDD00F4F7B0 = {
+			isa = PBXGroup;
+			children = (
+				A5C30A3123C68CDD00F4F7B0 /* Little Panda */,
+				A5C30A4823C68CDE00F4F7B0 /* Little PandaTests */,
+				A5C30A5223C68CDE00F4F7B0 /* Little Panda WatchKit App */,
+				A5C30A6123C68CDF00F4F7B0 /* Little Panda WatchKit Extension */,
+				A5C30A3023C68CDD00F4F7B0 /* Products */,
+				34DF0BF96387C5984E48ECC4 /* Pods */,
+				DEB76E41A7165CEE5000A487 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5C30A3023C68CDD00F4F7B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */,
+				A5C30A4523C68CDE00F4F7B0 /* Little PandaTests.xctest */,
+				A5C30A4E23C68CDE00F4F7B0 /* Little Panda WatchKit App.app */,
+				A5C30A5D23C68CDF00F4F7B0 /* Little Panda WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5C30A3123C68CDD00F4F7B0 /* Little Panda */ = {
+			isa = PBXGroup;
+			children = (
+				A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */,
+				A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */,
+				A5C30A3623C68CDD00F4F7B0 /* ViewController.swift */,
+				A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */,
+				A5C30A3B23C68CDE00F4F7B0 /* Assets.xcassets */,
+				A5C30A3D23C68CDE00F4F7B0 /* LaunchScreen.storyboard */,
+				A5C30A4023C68CDE00F4F7B0 /* Info.plist */,
+			);
+			path = "Little Panda";
+			sourceTree = "<group>";
+		};
+		A5C30A4823C68CDE00F4F7B0 /* Little PandaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C30A4923C68CDE00F4F7B0 /* Little_PandaTests.swift */,
+				A5C30A4B23C68CDE00F4F7B0 /* Info.plist */,
+			);
+			path = "Little PandaTests";
+			sourceTree = "<group>";
+		};
+		A5C30A5223C68CDE00F4F7B0 /* Little Panda WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A5C30A5323C68CDE00F4F7B0 /* Interface.storyboard */,
+				A5C30A5623C68CDF00F4F7B0 /* Assets.xcassets */,
+				A5C30A5823C68CDF00F4F7B0 /* Info.plist */,
+			);
+			path = "Little Panda WatchKit App";
+			sourceTree = "<group>";
+		};
+		A5C30A6123C68CDF00F4F7B0 /* Little Panda WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5C30A6223C68CDF00F4F7B0 /* InterfaceController.swift */,
+				A5C30A6423C68CDF00F4F7B0 /* ExtensionDelegate.swift */,
+				A5C30A6623C68CDF00F4F7B0 /* NotificationController.swift */,
+				A5C30A6823C68CDF00F4F7B0 /* ComplicationController.swift */,
+				A5C30A6A23C68CDF00F4F7B0 /* Assets.xcassets */,
+				A5C30A6C23C68CE000F4F7B0 /* Info.plist */,
+				A5C30A6D23C68CE000F4F7B0 /* PushNotificationPayload.apns */,
+			);
+			path = "Little Panda WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DEB76E41A7165CEE5000A487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5C30A2E23C68CDD00F4F7B0 /* Little Panda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C30A7823C68CE000F4F7B0 /* Build configuration list for PBXNativeTarget "Little Panda" */;
+			buildPhases = (
+				CB907132EA3E655BC60E50B2 /* [CP] Check Pods Manifest.lock */,
+				A5C30A2B23C68CDD00F4F7B0 /* Sources */,
+				A5C30A2C23C68CDD00F4F7B0 /* Frameworks */,
+				A5C30A2D23C68CDD00F4F7B0 /* Resources */,
+				A5C30A7723C68CE000F4F7B0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C30A5123C68CDE00F4F7B0 /* PBXTargetDependency */,
+			);
+			name = "Little Panda";
+			productName = "Little Panda";
+			productReference = A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5C30A4423C68CDE00F4F7B0 /* Little PandaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C30A7B23C68CE000F4F7B0 /* Build configuration list for PBXNativeTarget "Little PandaTests" */;
+			buildPhases = (
+				A5C30A4123C68CDE00F4F7B0 /* Sources */,
+				A5C30A4223C68CDE00F4F7B0 /* Frameworks */,
+				A5C30A4323C68CDE00F4F7B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C30A4723C68CDE00F4F7B0 /* PBXTargetDependency */,
+			);
+			name = "Little PandaTests";
+			productName = "Little PandaTests";
+			productReference = A5C30A4523C68CDE00F4F7B0 /* Little PandaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5C30A4D23C68CDE00F4F7B0 /* Little Panda WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C30A7423C68CE000F4F7B0 /* Build configuration list for PBXNativeTarget "Little Panda WatchKit App" */;
+			buildPhases = (
+				A5C30A4C23C68CDE00F4F7B0 /* Resources */,
+				A5C30A7323C68CE000F4F7B0 /* Embed App Extensions */,
+				BD8F7F3024E09339F8B7EBAB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C30A6023C68CDF00F4F7B0 /* PBXTargetDependency */,
+			);
+			name = "Little Panda WatchKit App";
+			productName = "Little Panda WatchKit App";
+			productReference = A5C30A4E23C68CDE00F4F7B0 /* Little Panda WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A5C30A5C23C68CDF00F4F7B0 /* Little Panda WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C30A7023C68CE000F4F7B0 /* Build configuration list for PBXNativeTarget "Little Panda WatchKit Extension" */;
+			buildPhases = (
+				A5C30A5923C68CDF00F4F7B0 /* Sources */,
+				A5C30A5A23C68CDF00F4F7B0 /* Frameworks */,
+				A5C30A5B23C68CDF00F4F7B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Little Panda WatchKit Extension";
+			productName = "Little Panda WatchKit Extension";
+			productReference = A5C30A5D23C68CDF00F4F7B0 /* Little Panda WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5C30A2723C68CDD00F4F7B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Daniel Fides";
+				TargetAttributes = {
+					A5C30A2E23C68CDD00F4F7B0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					A5C30A4423C68CDE00F4F7B0 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = A5C30A2E23C68CDD00F4F7B0;
+					};
+					A5C30A4D23C68CDE00F4F7B0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					A5C30A5C23C68CDF00F4F7B0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = A5C30A2A23C68CDD00F4F7B0 /* Build configuration list for PBXProject "Little Panda" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5C30A2623C68CDD00F4F7B0;
+			productRefGroup = A5C30A3023C68CDD00F4F7B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5C30A2E23C68CDD00F4F7B0 /* Little Panda */,
+				A5C30A4423C68CDE00F4F7B0 /* Little PandaTests */,
+				A5C30A4D23C68CDE00F4F7B0 /* Little Panda WatchKit App */,
+				A5C30A5C23C68CDF00F4F7B0 /* Little Panda WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5C30A2D23C68CDD00F4F7B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C30A3F23C68CDE00F4F7B0 /* LaunchScreen.storyboard in Resources */,
+				A5C30A3C23C68CDE00F4F7B0 /* Assets.xcassets in Resources */,
+				A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C30A4323C68CDE00F4F7B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C30A4C23C68CDE00F4F7B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C30A5723C68CDF00F4F7B0 /* Assets.xcassets in Resources */,
+				A5C30A5523C68CDE00F4F7B0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C30A5B23C68CDF00F4F7B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C30A6B23C68CDF00F4F7B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB907132EA3E655BC60E50B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Little Panda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5C30A2B23C68CDD00F4F7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C30A3723C68CDD00F4F7B0 /* ViewController.swift in Sources */,
+				A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */,
+				A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C30A4123C68CDE00F4F7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C30A4A23C68CDE00F4F7B0 /* Little_PandaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C30A5923C68CDF00F4F7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C30A6723C68CDF00F4F7B0 /* NotificationController.swift in Sources */,
+				A5C30A6923C68CDF00F4F7B0 /* ComplicationController.swift in Sources */,
+				A5C30A6523C68CDF00F4F7B0 /* ExtensionDelegate.swift in Sources */,
+				A5C30A6323C68CDF00F4F7B0 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5C30A4723C68CDE00F4F7B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C30A2E23C68CDD00F4F7B0 /* Little Panda */;
+			targetProxy = A5C30A4623C68CDE00F4F7B0 /* PBXContainerItemProxy */;
+		};
+		A5C30A5123C68CDE00F4F7B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C30A4D23C68CDE00F4F7B0 /* Little Panda WatchKit App */;
+			targetProxy = A5C30A5023C68CDE00F4F7B0 /* PBXContainerItemProxy */;
+		};
+		A5C30A6023C68CDF00F4F7B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C30A5C23C68CDF00F4F7B0 /* Little Panda WatchKit Extension */;
+			targetProxy = A5C30A5F23C68CDF00F4F7B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C30A3923C68CDD00F4F7B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5C30A3D23C68CDE00F4F7B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C30A3E23C68CDE00F4F7B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A5C30A5323C68CDE00F4F7B0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C30A5423C68CDE00F4F7B0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5C30A6E23C68CE000F4F7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5C30A6F23C68CE000F4F7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5C30A7123C68CE000F4F7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXTYQQ78S4;
+				INFOPLIST_FILE = "Little Panda WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "df.com.Little-Panda.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A5C30A7223C68CE000F4F7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXTYQQ78S4;
+				INFOPLIST_FILE = "Little Panda WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "df.com.Little-Panda.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		A5C30A7523C68CE000F4F7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXTYQQ78S4;
+				IBSC_MODULE = Little_Panda_WatchKit_Extension;
+				INFOPLIST_FILE = "Little Panda WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "df.com.Little-Panda.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A5C30A7623C68CE000F4F7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXTYQQ78S4;
+				IBSC_MODULE = Little_Panda_WatchKit_Extension;
+				INFOPLIST_FILE = "Little Panda WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "df.com.Little-Panda.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		A5C30A7923C68CE000F4F7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C318133240756A30520F53 /* Pods-Little Panda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXTYQQ78S4;
+				INFOPLIST_FILE = "Little Panda/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "df.com.Little-Panda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A5C30A7A23C68CE000F4F7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0CE0C16916A360A5AADE50 /* Pods-Little Panda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXTYQQ78S4;
+				INFOPLIST_FILE = "Little Panda/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "df.com.Little-Panda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A5C30A7C23C68CE000F4F7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXTYQQ78S4;
+				INFOPLIST_FILE = "Little PandaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "df.com.Little-PandaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Little Panda.app/Little Panda";
+			};
+			name = Debug;
+		};
+		A5C30A7D23C68CE000F4F7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXTYQQ78S4;
+				INFOPLIST_FILE = "Little PandaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "df.com.Little-PandaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Little Panda.app/Little Panda";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5C30A2A23C68CDD00F4F7B0 /* Build configuration list for PBXProject "Little Panda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C30A6E23C68CE000F4F7B0 /* Debug */,
+				A5C30A6F23C68CE000F4F7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C30A7023C68CE000F4F7B0 /* Build configuration list for PBXNativeTarget "Little Panda WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C30A7123C68CE000F4F7B0 /* Debug */,
+				A5C30A7223C68CE000F4F7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C30A7423C68CE000F4F7B0 /* Build configuration list for PBXNativeTarget "Little Panda WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C30A7523C68CE000F4F7B0 /* Debug */,
+				A5C30A7623C68CE000F4F7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C30A7823C68CE000F4F7B0 /* Build configuration list for PBXNativeTarget "Little Panda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C30A7923C68CE000F4F7B0 /* Debug */,
+				A5C30A7A23C68CE000F4F7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C30A7B23C68CE000F4F7B0 /* Build configuration list for PBXNativeTarget "Little PandaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C30A7C23C68CE000F4F7B0 /* Debug */,
+				A5C30A7D23C68CE000F4F7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5C30A2723C68CDD00F4F7B0 /* Project object */;
+}
