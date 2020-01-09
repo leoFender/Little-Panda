@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6DD8F8C29A993692BE2B6133 /* Pods_Little_Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */; };
+		A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597623C696760094F6A4 /* MainMenuViewController.swift */; };
+		A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597923C6975E0094F6A4 /* BaseViewController.swift */; };
+		A53E597D23C697D80094F6A4 /* DIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597C23C697D80094F6A4 /* DIStore.swift */; };
+		A53E597F23C69AE70094F6A4 /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597E23C69AE70094F6A4 /* ServiceWrapper.swift */; };
+		A53E598123C6A8570094F6A4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598023C6A8570094F6A4 /* Router.swift */; };
+		A53E598423C6AE800094F6A4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598323C6AE800094F6A4 /* TimerViewController.swift */; };
+		A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598623C6AEB10094F6A4 /* PandaViewController.swift */; };
+		A53E598A23C6AED90094F6A4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598923C6AED90094F6A4 /* SettingsViewController.swift */; };
 		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
 		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
-		A5C30A3723C68CDD00F4F7B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3623C68CDD00F4F7B0 /* ViewController.swift */; };
 		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
 		A5C30A3C23C68CDE00F4F7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3B23C68CDE00F4F7B0 /* Assets.xcassets */; };
 		A5C30A3F23C68CDE00F4F7B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3D23C68CDE00F4F7B0 /* LaunchScreen.storyboard */; };
@@ -78,10 +85,17 @@
 /* Begin PBXFileReference section */
 		3F0CE0C16916A360A5AADE50 /* Pods-Little Panda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Panda.release.xcconfig"; path = "Target Support Files/Pods-Little Panda/Pods-Little Panda.release.xcconfig"; sourceTree = "<group>"; };
 		43C318133240756A30520F53 /* Pods-Little Panda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Panda.debug.xcconfig"; path = "Target Support Files/Pods-Little Panda/Pods-Little Panda.debug.xcconfig"; sourceTree = "<group>"; };
+		A53E597623C696760094F6A4 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		A53E597923C6975E0094F6A4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A53E597C23C697D80094F6A4 /* DIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIStore.swift; sourceTree = "<group>"; };
+		A53E597E23C69AE70094F6A4 /* ServiceWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceWrapper.swift; sourceTree = "<group>"; };
+		A53E598023C6A8570094F6A4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A53E598323C6AE800094F6A4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		A53E598623C6AEB10094F6A4 /* PandaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaViewController.swift; sourceTree = "<group>"; };
+		A53E598923C6AED90094F6A4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5C30A3623C68CDD00F4F7B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5C30A3923C68CDD00F4F7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5C30A3B23C68CDE00F4F7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C30A3E23C68CDE00F4F7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,8 +157,59 @@
 				43C318133240756A30520F53 /* Pods-Little Panda.debug.xcconfig */,
 				3F0CE0C16916A360A5AADE50 /* Pods-Little Panda.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A53E597523C696390094F6A4 /* MainMenuScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A53E597623C696760094F6A4 /* MainMenuViewController.swift */,
+			);
+			path = MainMenuScreen;
+			sourceTree = "<group>";
+		};
+		A53E597823C697490094F6A4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */,
+				A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */,
+				A53E597923C6975E0094F6A4 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A53E597B23C697BA0094F6A4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A53E597C23C697D80094F6A4 /* DIStore.swift */,
+				A53E597E23C69AE70094F6A4 /* ServiceWrapper.swift */,
+				A53E598023C6A8570094F6A4 /* Router.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A53E598223C6ADE50094F6A4 /* TimerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A53E598323C6AE800094F6A4 /* TimerViewController.swift */,
+			);
+			path = TimerScreen;
+			sourceTree = "<group>";
+		};
+		A53E598523C6AE9B0094F6A4 /* PandaScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A53E598623C6AEB10094F6A4 /* PandaViewController.swift */,
+			);
+			path = PandaScreen;
+			sourceTree = "<group>";
+		};
+		A53E598823C6AEBC0094F6A4 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A53E598923C6AED90094F6A4 /* SettingsViewController.swift */,
+			);
+			path = SettingsScreen;
 			sourceTree = "<group>";
 		};
 		A5C30A2623C68CDD00F4F7B0 = {
@@ -174,9 +239,12 @@
 		A5C30A3123C68CDD00F4F7B0 /* Little Panda */ = {
 			isa = PBXGroup;
 			children = (
-				A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */,
-				A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */,
-				A5C30A3623C68CDD00F4F7B0 /* ViewController.swift */,
+				A53E597B23C697BA0094F6A4 /* Services */,
+				A53E597823C697490094F6A4 /* Base */,
+				A53E597523C696390094F6A4 /* MainMenuScreen */,
+				A53E598523C6AE9B0094F6A4 /* PandaScreen */,
+				A53E598223C6ADE50094F6A4 /* TimerScreen */,
+				A53E598823C6AEBC0094F6A4 /* SettingsScreen */,
 				A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */,
 				A5C30A3B23C68CDE00F4F7B0 /* Assets.xcassets */,
 				A5C30A3D23C68CDE00F4F7B0 /* LaunchScreen.storyboard */,
@@ -415,8 +483,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C30A3723C68CDD00F4F7B0 /* ViewController.swift in Sources */,
+				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,
+				A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */,
+				A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */,
+				A53E598A23C6AED90094F6A4 /* SettingsViewController.swift in Sources */,
+				A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */,
 				A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */,
+				A53E598423C6AE800094F6A4 /* TimerViewController.swift in Sources */,
+				A53E597F23C69AE70094F6A4 /* ServiceWrapper.swift in Sources */,
+				A53E597D23C697D80094F6A4 /* DIStore.swift in Sources */,
 				A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
