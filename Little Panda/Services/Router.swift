@@ -8,8 +8,21 @@ enum Screens {
     case fontSelection
     case layoutSetup
     
-    func asViewController() -> BaseViewController {
-        return MainMenuViewController()
+    func asViewController() -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        return storyboard.instantiateViewController(identifier: storyboardID())
+    }
+    
+    private func storyboardID() -> String {
+        switch self {
+        case .menu:
+            return "MainMenuViewController"
+        case .timer:
+            return "TimerViewController"
+        default:
+            //TODO: placeholder
+            return "MainMenuViewController"
+        }
     }
 }
 

@@ -16,6 +16,12 @@
 		A53E598423C6AE800094F6A4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598323C6AE800094F6A4 /* TimerViewController.swift */; };
 		A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598623C6AEB10094F6A4 /* PandaViewController.swift */; };
 		A53E598A23C6AED90094F6A4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598923C6AED90094F6A4 /* SettingsViewController.swift */; };
+		A53E598D23C6B63B0094F6A4 /* ViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */; };
+		A53E598F23C6C0370094F6A4 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598E23C6C0370094F6A4 /* MainMenuViewModel.swift */; };
+		A53E599123C6CB560094F6A4 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599023C6CB560094F6A4 /* AppController.swift */; };
+		A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599223C7E5F80094F6A4 /* TimerViewModel.swift */; };
+		A53E599623C9160F0094F6A4 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599523C9160F0094F6A4 /* DateHelper.swift */; };
+		A53E599823C91DA30094F6A4 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */; };
 		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
 		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
 		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
@@ -93,6 +99,12 @@
 		A53E598323C6AE800094F6A4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		A53E598623C6AEB10094F6A4 /* PandaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaViewController.swift; sourceTree = "<group>"; };
 		A53E598923C6AED90094F6A4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWrapper.swift; sourceTree = "<group>"; };
+		A53E598E23C6C0370094F6A4 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
+		A53E599023C6CB560094F6A4 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		A53E599223C7E5F80094F6A4 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		A53E599523C9160F0094F6A4 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 		A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				A53E597623C696760094F6A4 /* MainMenuViewController.swift */,
+				A53E598E23C6C0370094F6A4 /* MainMenuViewModel.swift */,
 			);
 			path = MainMenuScreen;
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 				A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */,
 				A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */,
 				A53E597923C6975E0094F6A4 /* BaseViewController.swift */,
+				A53E599023C6CB560094F6A4 /* AppController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -192,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				A53E598323C6AE800094F6A4 /* TimerViewController.swift */,
+				A53E599223C7E5F80094F6A4 /* TimerViewModel.swift */,
 			);
 			path = TimerScreen;
 			sourceTree = "<group>";
@@ -210,6 +225,24 @@
 				A53E598923C6AED90094F6A4 /* SettingsViewController.swift */,
 			);
 			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		A53E598B23C6B62B0094F6A4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A53E599423C915FF0094F6A4 /* Extensions */,
+				A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A53E599423C915FF0094F6A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A53E599523C9160F0094F6A4 /* DateHelper.swift */,
+				A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A5C30A2623C68CDD00F4F7B0 = {
@@ -239,6 +272,7 @@
 		A5C30A3123C68CDD00F4F7B0 /* Little Panda */ = {
 			isa = PBXGroup;
 			children = (
+				A53E598B23C6B62B0094F6A4 /* Support */,
 				A53E597B23C697BA0094F6A4 /* Services */,
 				A53E597823C697490094F6A4 /* Base */,
 				A53E597523C696390094F6A4 /* MainMenuScreen */,
@@ -483,13 +517,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53E599623C9160F0094F6A4 /* DateHelper.swift in Sources */,
+				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
 				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,
 				A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */,
+				A53E599123C6CB560094F6A4 /* AppController.swift in Sources */,
 				A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */,
+				A53E599823C91DA30094F6A4 /* DateFormatterHelper.swift in Sources */,
 				A53E598A23C6AED90094F6A4 /* SettingsViewController.swift in Sources */,
+				A53E598D23C6B63B0094F6A4 /* ViewModelWrapper.swift in Sources */,
 				A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */,
 				A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */,
 				A53E598423C6AE800094F6A4 /* TimerViewController.swift in Sources */,
+				A53E598F23C6C0370094F6A4 /* MainMenuViewModel.swift in Sources */,
 				A53E597F23C69AE70094F6A4 /* ServiceWrapper.swift in Sources */,
 				A53E597D23C697D80094F6A4 /* DIStore.swift in Sources */,
 				A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */,

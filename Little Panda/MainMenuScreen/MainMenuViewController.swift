@@ -2,6 +2,8 @@ import UIKit
 
 final class MainMenuViewController: BaseViewController {
 
+    @ViewModel var viewModel: MainMenuViewModel
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
