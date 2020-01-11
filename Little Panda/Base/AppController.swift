@@ -8,5 +8,6 @@ struct AppController {
         
         store.registerFactory { MainMenuViewModel() }
         store.registerFactory { TimerViewModel() }
+        store.registerFactory { SettingsViewModel() } 
     }
 }

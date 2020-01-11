@@ -5,8 +5,9 @@ enum Screens {
     case timer
     case panda
     case settings
-    case fontSelection
+    case backgroundSelection
     case layoutSetup
+    case colorSelection
     
     func asViewController() -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -19,6 +20,8 @@ enum Screens {
             return "MainMenuViewController"
         case .timer:
             return "TimerViewController"
+        case .settings:
+            return "SettingsViewController"
         default:
             //TODO: placeholder
             return "MainMenuViewController"

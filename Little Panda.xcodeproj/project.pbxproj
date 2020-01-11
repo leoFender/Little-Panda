@@ -22,6 +22,11 @@
 		A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599223C7E5F80094F6A4 /* TimerViewModel.swift */; };
 		A53E599623C9160F0094F6A4 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599523C9160F0094F6A4 /* DateHelper.swift */; };
 		A53E599823C91DA30094F6A4 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */; };
+		A53E599A23C92EE40094F6A4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599923C92EE40094F6A4 /* SettingsViewModel.swift */; };
+		A53E599C23C93CF40094F6A4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599B23C93CF40094F6A4 /* Config.swift */; };
+		A53E599E23C93D150094F6A4 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */; };
+		A53E59A323C943C80094F6A4 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A223C943C80094F6A4 /* UIColorHelper.swift */; };
+		A53E59A723C947780094F6A4 /* ConfigurationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A623C947780094F6A4 /* ConfigurationModels.swift */; };
 		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
 		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
 		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
@@ -105,6 +110,11 @@
 		A53E599223C7E5F80094F6A4 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		A53E599523C9160F0094F6A4 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
+		A53E599923C92EE40094F6A4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A53E599B23C93CF40094F6A4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
+		A53E59A223C943C80094F6A4 /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
+		A53E59A623C947780094F6A4 /* ConfigurationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModels.swift; sourceTree = "<group>"; };
 		A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +208,7 @@
 				A53E597C23C697D80094F6A4 /* DIStore.swift */,
 				A53E597E23C69AE70094F6A4 /* ServiceWrapper.swift */,
 				A53E598023C6A8570094F6A4 /* Router.swift */,
+				A53E599B23C93CF40094F6A4 /* Config.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -223,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				A53E598923C6AED90094F6A4 /* SettingsViewController.swift */,
+				A53E599923C92EE40094F6A4 /* SettingsViewModel.swift */,
 			);
 			path = SettingsScreen;
 			sourceTree = "<group>";
@@ -230,8 +242,10 @@
 		A53E598B23C6B62B0094F6A4 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				A53E599F23C940D80094F6A4 /* Models */,
 				A53E599423C915FF0094F6A4 /* Extensions */,
 				A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */,
+				A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -241,8 +255,17 @@
 			children = (
 				A53E599523C9160F0094F6A4 /* DateHelper.swift */,
 				A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */,
+				A53E59A223C943C80094F6A4 /* UIColorHelper.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A53E599F23C940D80094F6A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A53E59A623C947780094F6A4 /* ConfigurationModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A5C30A2623C68CDD00F4F7B0 = {
@@ -521,14 +544,19 @@
 				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
 				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,
 				A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */,
+				A53E599E23C93D150094F6A4 /* UserDefaultsWrapper.swift in Sources */,
 				A53E599123C6CB560094F6A4 /* AppController.swift in Sources */,
+				A53E59A323C943C80094F6A4 /* UIColorHelper.swift in Sources */,
 				A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */,
 				A53E599823C91DA30094F6A4 /* DateFormatterHelper.swift in Sources */,
 				A53E598A23C6AED90094F6A4 /* SettingsViewController.swift in Sources */,
+				A53E599A23C92EE40094F6A4 /* SettingsViewModel.swift in Sources */,
 				A53E598D23C6B63B0094F6A4 /* ViewModelWrapper.swift in Sources */,
 				A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */,
+				A53E599C23C93CF40094F6A4 /* Config.swift in Sources */,
 				A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */,
 				A53E598423C6AE800094F6A4 /* TimerViewController.swift in Sources */,
+				A53E59A723C947780094F6A4 /* ConfigurationModels.swift in Sources */,
 				A53E598F23C6C0370094F6A4 /* MainMenuViewModel.swift in Sources */,
 				A53E597F23C69AE70094F6A4 /* ServiceWrapper.swift in Sources */,
 				A53E597D23C697D80094F6A4 /* DIStore.swift in Sources */,
