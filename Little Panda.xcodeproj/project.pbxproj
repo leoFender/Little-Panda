@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,8 @@
 		A53E59A323C943C80094F6A4 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A223C943C80094F6A4 /* UIColorHelper.swift */; };
 		A53E59A723C947780094F6A4 /* ConfigurationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A623C947780094F6A4 /* ConfigurationModels.swift */; };
 		A53E59AA23C9666C0094F6A4 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A923C9666C0094F6A4 /* ColorPickerViewController.swift */; };
+		A53E59AD23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59AC23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift */; };
+		A53E59AF23C983E60094F6A4 /* LabelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59AE23C983E60094F6A4 /* LabelHelper.swift */; };
 		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
 		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
 		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
@@ -117,6 +119,8 @@
 		A53E59A223C943C80094F6A4 /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		A53E59A623C947780094F6A4 /* ConfigurationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModels.swift; sourceTree = "<group>"; };
 		A53E59A923C9666C0094F6A4 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		A53E59AC23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPositionSetupViewController.swift; sourceTree = "<group>"; };
+		A53E59AE23C983E60094F6A4 /* LabelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHelper.swift; sourceTree = "<group>"; };
 		A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 		A53E598823C6AEBC0094F6A4 /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A53E59AB23C97B660094F6A4 /* TimerPosition */,
 				A53E59A823C966570094F6A4 /* ColorPicker */,
 				A53E598923C6AED90094F6A4 /* SettingsViewController.swift */,
 				A53E599923C92EE40094F6A4 /* SettingsViewModel.swift */,
@@ -259,6 +264,7 @@
 				A53E599523C9160F0094F6A4 /* DateHelper.swift */,
 				A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */,
 				A53E59A223C943C80094F6A4 /* UIColorHelper.swift */,
+				A53E59AE23C983E60094F6A4 /* LabelHelper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,6 +283,14 @@
 				A53E59A923C9666C0094F6A4 /* ColorPickerViewController.swift */,
 			);
 			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		A53E59AB23C97B660094F6A4 /* TimerPosition */ = {
+			isa = PBXGroup;
+			children = (
+				A53E59AC23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift */,
+			);
+			path = TimerPosition;
 			sourceTree = "<group>";
 		};
 		A5C30A2623C68CDD00F4F7B0 = {
@@ -573,6 +587,7 @@
 				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
 				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,
 				A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */,
+				A53E59AF23C983E60094F6A4 /* LabelHelper.swift in Sources */,
 				A53E59AA23C9666C0094F6A4 /* ColorPickerViewController.swift in Sources */,
 				A53E599E23C93D150094F6A4 /* UserDefaultsWrapper.swift in Sources */,
 				A53E599123C6CB560094F6A4 /* AppController.swift in Sources */,
@@ -585,6 +600,7 @@
 				A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */,
 				A53E599C23C93CF40094F6A4 /* Config.swift in Sources */,
 				A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */,
+				A53E59AD23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift in Sources */,
 				A53E598423C6AE800094F6A4 /* TimerViewController.swift in Sources */,
 				A53E59A723C947780094F6A4 /* ConfigurationModels.swift in Sources */,
 				A53E598F23C6C0370094F6A4 /* MainMenuViewModel.swift in Sources */,

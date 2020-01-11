@@ -24,6 +24,8 @@ enum Screens {
             return "SettingsViewController"
         case .colorSelection:
             return "ColorPickerViewController"
+        case .layoutSetup:
+            return "TimerPositionSetupViewController"
         default:
             //TODO: placeholder
             return "MainMenuViewController"

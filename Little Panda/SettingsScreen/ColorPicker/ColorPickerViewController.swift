@@ -26,17 +26,14 @@ class ColorPickerViewController: BaseViewController {
     }
     
     private func configurateUI() {
-        let currentFont = Config.timerFont
-        let color = currentFont.rgbColor.uiColor()
-        testLabel.textColor = color
-        testLabel.font = UIFont(name: currentFont.name, size: currentFont.size)
+        testLabel.loadTimerConfig()
         
-//        backgroundPreview.image = UIImage(named: Config.backgroundImageName)
+        backgroundPreview.image = UIImage(named: Config.backgroundImageName)
         
-        colorPicker.adjustToColor(color)
+        colorPicker.adjustToColor(testLabel.textColor)
     }
     
-    @objc func saveButtonDidTap() {
+    @objc private func saveButtonDidTap() {
         let current = Config.timerFont
         let rgb = testLabel.textColor.rgb()
         let newColor = ColorConfiguration(red: rgb.red, green: rgb.green, blue: rgb.blue, alpha: rgb.alpha)

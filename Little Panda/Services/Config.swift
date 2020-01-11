@@ -18,7 +18,7 @@ struct Config {
     @ConfigProperty(key: "timer_label_position", defaultValue: PositionConfiguration.base())
     static var timerLabelPosition: PositionConfiguration
     
-    @ConfigProperty(key: "background_image_name", defaultValue: "Panda")
+    @ConfigProperty(key: "background_image_name", defaultValue: "Dark Circles")
     static var backgroundImageName: String
     
     @ConfigProperty(key: "is_custom_background", defaultValue: false)

@@ -37,8 +37,8 @@ struct FontConfiguration: Codable, HasDefaultConfigValue {
 }
 
 struct PositionConfiguration: Codable, HasDefaultConfigValue {
-    let vertical: Double
-    let horizontal: Double
+    let vertical: CGFloat
+    let horizontal: CGFloat
     
     static func base() -> PositionConfiguration {
         return PositionConfiguration(vertical: 0, horizontal: 0)

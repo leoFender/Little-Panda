@@ -59,16 +59,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AF6-Uc-hLH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="d8p-fJ-ZXp"/>
+                    <navigationItem key="navigationItem" title="Main Menu" id="d8p-fJ-ZXp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0e-sW-oVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-251" y="429"/>
         </scene>
-        <!--Timer View Controller-->
+        <!--Countdown-->
         <scene sceneID="0TI-FR-ZRE">
             <objects>
-                <viewController storyboardIdentifier="TimerViewController" id="ZZV-8l-taw" customClass="TimerViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimerViewController" title="Countdown" id="ZZV-8l-taw" customClass="TimerViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zx-Vc-qL7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,7 +96,9 @@
                     </view>
                     <connections>
                         <outlet property="background" destination="fQu-6K-pPu" id="0bL-u0-Fyz"/>
+                        <outlet property="horizontal" destination="PTN-z3-NSb" id="WgK-mQ-FzK"/>
                         <outlet property="timeLabel" destination="VXq-sc-PFU" id="E0U-gX-Tbr"/>
+                        <outlet property="vertical" destination="Y92-mI-MbJ" id="SWE-mh-zpi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPN-w8-Zvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -366,10 +368,10 @@
             </objects>
             <point key="canvasLocation" x="893" y="-262"/>
         </scene>
-        <!--Text color picker-->
+        <!--Text color setup-->
         <scene sceneID="VCA-Rh-qro">
             <objects>
-                <viewController storyboardIdentifier="ColorPickerViewController" title="Text color picker" id="fad-0q-b9v" customClass="ColorPickerViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ColorPickerViewController" title="Text color setup" id="fad-0q-b9v" customClass="ColorPickerViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M7O-mB-SdT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -432,7 +434,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqG-QU-EwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1950.7246376811595" y="-528.34821428571422"/>
+            <point key="canvasLocation" x="2100" y="-1059"/>
+        </scene>
+        <!--Position setup-->
+        <scene sceneID="VGu-QV-H5y">
+            <objects>
+                <viewController storyboardIdentifier="TimerPositionSetupViewController" title="Position setup" id="cQp-it-lEh" customClass="TimerPositionSetupViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zgQ-xF-6rS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DTg-wj-6bz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 mnth 21 days 7:15:24" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWh-Mk-fdJ">
+                                <rect key="frame" x="146.5" y="427.5" width="121" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lWh-Mk-fdJ" firstAttribute="centerY" secondItem="zgQ-xF-6rS" secondAttribute="centerY" id="J8G-c1-G5d"/>
+                            <constraint firstItem="DTg-wj-6bz" firstAttribute="leading" secondItem="cxa-4b-SUL" secondAttribute="leading" id="MP4-FK-cfw"/>
+                            <constraint firstItem="DTg-wj-6bz" firstAttribute="trailing" secondItem="cxa-4b-SUL" secondAttribute="trailing" id="Vb2-CO-6g7"/>
+                            <constraint firstItem="lWh-Mk-fdJ" firstAttribute="centerX" secondItem="zgQ-xF-6rS" secondAttribute="centerX" id="ZPS-cp-oJg"/>
+                            <constraint firstItem="DTg-wj-6bz" firstAttribute="top" secondItem="zgQ-xF-6rS" secondAttribute="top" id="eyL-3A-oyb"/>
+                            <constraint firstAttribute="bottom" secondItem="DTg-wj-6bz" secondAttribute="bottom" id="tct-IN-5YW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cxa-4b-SUL"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="DTg-wj-6bz" id="pS9-bZ-rdd"/>
+                        <outlet property="horizontal" destination="ZPS-cp-oJg" id="Hc7-Xr-WyF"/>
+                        <outlet property="testLabel" destination="lWh-Mk-fdJ" id="B7e-59-Rah"/>
+                        <outlet property="vertical" destination="J8G-c1-G5d" id="wYb-0A-4gt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cte-4p-dqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="-263"/>
         </scene>
     </scenes>
     <resources>
