@@ -4,6 +4,7 @@ class SettingsViewController: UITableViewController {
     private var fontConfigCurrentScreen: Screens = .timer
     
     @ViewModel var viewModel: SettingsViewModel
+    @Injected var router: Router
     
     @IBOutlet weak var timerFontLabel: UILabel!
     @IBOutlet weak var pandaFontLabel: UILabel!
@@ -12,6 +13,7 @@ class SettingsViewController: UITableViewController {
     @IBOutlet weak var timerBackgroundLabel: UILabel!
     @IBOutlet weak var fontSizeStepper: UIStepper!
     @IBOutlet weak var fontSizeLabel: UILabel!
+    @IBOutlet weak var fontColor: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,7 @@ class SettingsViewController: UITableViewController {
     
     private func configurateUI() {
         let currentTimerFont = Config.timerFont
-        timerFontLabel.textColor = currentTimerFont.rgbColor.uiColor()
+        fontColor.textColor = currentTimerFont.rgbColor.uiColor()
         timerFontLabel.text = currentTimerFont.name
         fontSizeLabel.text = "\(Int(currentTimerFont.size))"
         fontSizeStepper.value = Double(currentTimerFont.size)
@@ -64,6 +66,8 @@ extension SettingsViewController {
         case 0: // font
             fontConfigCurrentScreen = .timer
             presentFontSelector()
+        case 2: // font color
+            router.show(.colorSelection, from: self)
         default:
             return
         }

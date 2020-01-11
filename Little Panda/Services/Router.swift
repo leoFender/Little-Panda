@@ -22,6 +22,8 @@ enum Screens {
             return "TimerViewController"
         case .settings:
             return "SettingsViewController"
+        case .colorSelection:
+            return "ColorPickerViewController"
         default:
             //TODO: placeholder
             return "MainMenuViewController"
@@ -30,17 +32,17 @@ enum Screens {
 }
 
 protocol Router {
-    func show(_ screen: Screens, from controller: BaseViewController)
-    func present(_ screen: Screens, from controller: BaseViewController)
+    func show(_ screen: Screens, from controller: UIViewController)
+    func present(_ screen: Screens, from controller: UIViewController)
 }
 
 struct RouterService: Router {
 
-    func show(_ screen: Screens, from controller: BaseViewController) {
+    func show(_ screen: Screens, from controller: UIViewController) {
         controller.navigationController?.pushViewController(screen.asViewController(), animated: true)
     }
     
-    func present(_ screen: Screens, from controller: BaseViewController) {
+    func present(_ screen: Screens, from controller: UIViewController) {
         controller.show(screen.asViewController(), sender: nil)
     }
 }

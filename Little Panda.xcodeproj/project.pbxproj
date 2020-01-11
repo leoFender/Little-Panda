@@ -27,6 +27,7 @@
 		A53E599E23C93D150094F6A4 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */; };
 		A53E59A323C943C80094F6A4 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A223C943C80094F6A4 /* UIColorHelper.swift */; };
 		A53E59A723C947780094F6A4 /* ConfigurationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A623C947780094F6A4 /* ConfigurationModels.swift */; };
+		A53E59AA23C9666C0094F6A4 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A923C9666C0094F6A4 /* ColorPickerViewController.swift */; };
 		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
 		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
 		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
@@ -115,6 +116,7 @@
 		A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
 		A53E59A223C943C80094F6A4 /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		A53E59A623C947780094F6A4 /* ConfigurationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModels.swift; sourceTree = "<group>"; };
+		A53E59A923C9666C0094F6A4 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 		A53E598823C6AEBC0094F6A4 /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A53E59A823C966570094F6A4 /* ColorPicker */,
 				A53E598923C6AED90094F6A4 /* SettingsViewController.swift */,
 				A53E599923C92EE40094F6A4 /* SettingsViewModel.swift */,
 			);
@@ -266,6 +269,14 @@
 				A53E59A623C947780094F6A4 /* ConfigurationModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A53E59A823C966570094F6A4 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A53E59A923C9666C0094F6A4 /* ColorPickerViewController.swift */,
+			);
+			path = ColorPicker;
 			sourceTree = "<group>";
 		};
 		A5C30A2623C68CDD00F4F7B0 = {
@@ -363,6 +374,7 @@
 				A5C30A2C23C68CDD00F4F7B0 /* Frameworks */,
 				A5C30A2D23C68CDD00F4F7B0 /* Resources */,
 				A5C30A7723C68CE000F4F7B0 /* Embed Watch Content */,
+				3AC11DA4E964BBE707389DF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -511,6 +523,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3AC11DA4E964BBE707389DF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Little Panda/Pods-Little Panda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Little Panda/Pods-Little Panda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Little Panda/Pods-Little Panda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CB907132EA3E655BC60E50B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,6 +573,7 @@
 				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
 				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,
 				A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */,
+				A53E59AA23C9666C0094F6A4 /* ColorPickerViewController.swift in Sources */,
 				A53E599E23C93D150094F6A4 /* UserDefaultsWrapper.swift in Sources */,
 				A53E599123C6CB560094F6A4 /* AppController.swift in Sources */,
 				A53E59A323C943C80094F6A4 /* UIColorHelper.swift in Sources */,
