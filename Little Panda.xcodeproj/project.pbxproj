@@ -30,6 +30,11 @@
 		A53E59AA23C9666C0094F6A4 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59A923C9666C0094F6A4 /* ColorPickerViewController.swift */; };
 		A53E59AD23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59AC23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift */; };
 		A53E59AF23C983E60094F6A4 /* LabelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59AE23C983E60094F6A4 /* LabelHelper.swift */; };
+		A53E59B223CA76E50094F6A4 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59B123CA76E50094F6A4 /* BackgroundViewController.swift */; };
+		A53E59B423CA77030094F6A4 /* BackgroundSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59B323CA77030094F6A4 /* BackgroundSelectorViewModel.swift */; };
+		A53E59BB23CA98510094F6A4 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BA23CA98510094F6A4 /* ZoomAnimator.swift */; };
+		A53E59BD23CA9A290094F6A4 /* ZoomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BC23CA9A290094F6A4 /* ZoomTransitionController.swift */; };
+		A53E59C023CA9CAF0094F6A4 /* ZoomPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BF23CA9CAF0094F6A4 /* ZoomPreviewViewController.swift */; };
 		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
 		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
 		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
@@ -45,6 +50,8 @@
 		A5C30A6723C68CDF00F4F7B0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A6623C68CDF00F4F7B0 /* NotificationController.swift */; };
 		A5C30A6923C68CDF00F4F7B0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A6823C68CDF00F4F7B0 /* ComplicationController.swift */; };
 		A5C30A6B23C68CDF00F4F7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A6A23C68CDF00F4F7B0 /* Assets.xcassets */; };
+		A5C7FE8823CAAAC3006BB342 /* BackgroundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */; };
+		A5C7FE8923CAAAC3006BB342 /* BackgroundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +128,11 @@
 		A53E59A923C9666C0094F6A4 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		A53E59AC23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPositionSetupViewController.swift; sourceTree = "<group>"; };
 		A53E59AE23C983E60094F6A4 /* LabelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHelper.swift; sourceTree = "<group>"; };
+		A53E59B123CA76E50094F6A4 /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
+		A53E59B323CA77030094F6A4 /* BackgroundSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSelectorViewModel.swift; sourceTree = "<group>"; };
+		A53E59BA23CA98510094F6A4 /* ZoomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
+		A53E59BC23CA9A290094F6A4 /* ZoomTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionController.swift; sourceTree = "<group>"; };
+		A53E59BF23CA9CAF0094F6A4 /* ZoomPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomPreviewViewController.swift; sourceTree = "<group>"; };
 		A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +155,8 @@
 		A5C30A6A23C68CDF00F4F7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C30A6C23C68CE000F4F7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5C30A6D23C68CE000F4F7B0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundCollectionViewCell.xib; sourceTree = "<group>"; };
 		B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Little_Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -239,6 +253,8 @@
 		A53E598823C6AEBC0094F6A4 /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A53E59BE23CA9C8D0094F6A4 /* ZoomedBackgroundPreview */,
+				A53E59B023CA76CA0094F6A4 /* BackgroundSelector */,
 				A53E59AB23C97B660094F6A4 /* TimerPosition */,
 				A53E59A823C966570094F6A4 /* ColorPicker */,
 				A53E598923C6AED90094F6A4 /* SettingsViewController.swift */,
@@ -250,6 +266,7 @@
 		A53E598B23C6B62B0094F6A4 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				A53E59B923CA983D0094F6A4 /* TransitionAnimator */,
 				A53E599F23C940D80094F6A4 /* Models */,
 				A53E599423C915FF0094F6A4 /* Extensions */,
 				A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */,
@@ -291,6 +308,34 @@
 				A53E59AC23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift */,
 			);
 			path = TimerPosition;
+			sourceTree = "<group>";
+		};
+		A53E59B023CA76CA0094F6A4 /* BackgroundSelector */ = {
+			isa = PBXGroup;
+			children = (
+				A53E59B123CA76E50094F6A4 /* BackgroundViewController.swift */,
+				A53E59B323CA77030094F6A4 /* BackgroundSelectorViewModel.swift */,
+				A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */,
+				A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */,
+			);
+			path = BackgroundSelector;
+			sourceTree = "<group>";
+		};
+		A53E59B923CA983D0094F6A4 /* TransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				A53E59BA23CA98510094F6A4 /* ZoomAnimator.swift */,
+				A53E59BC23CA9A290094F6A4 /* ZoomTransitionController.swift */,
+			);
+			path = TransitionAnimator;
+			sourceTree = "<group>";
+		};
+		A53E59BE23CA9C8D0094F6A4 /* ZoomedBackgroundPreview */ = {
+			isa = PBXGroup;
+			children = (
+				A53E59BF23CA9CAF0094F6A4 /* ZoomPreviewViewController.swift */,
+			);
+			path = ZoomedBackgroundPreview;
 			sourceTree = "<group>";
 		};
 		A5C30A2623C68CDD00F4F7B0 = {
@@ -504,6 +549,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C7FE8923CAAAC3006BB342 /* BackgroundCollectionViewCell.xib in Resources */,
 				A5C30A3F23C68CDE00F4F7B0 /* LaunchScreen.storyboard in Resources */,
 				A5C30A3C23C68CDE00F4F7B0 /* Assets.xcassets in Resources */,
 				A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */,
@@ -583,13 +629,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C7FE8823CAAAC3006BB342 /* BackgroundCollectionViewCell.swift in Sources */,
 				A53E599623C9160F0094F6A4 /* DateHelper.swift in Sources */,
 				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
 				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,
 				A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */,
 				A53E59AF23C983E60094F6A4 /* LabelHelper.swift in Sources */,
 				A53E59AA23C9666C0094F6A4 /* ColorPickerViewController.swift in Sources */,
+				A53E59C023CA9CAF0094F6A4 /* ZoomPreviewViewController.swift in Sources */,
+				A53E59BD23CA9A290094F6A4 /* ZoomTransitionController.swift in Sources */,
 				A53E599E23C93D150094F6A4 /* UserDefaultsWrapper.swift in Sources */,
+				A53E59B423CA77030094F6A4 /* BackgroundSelectorViewModel.swift in Sources */,
 				A53E599123C6CB560094F6A4 /* AppController.swift in Sources */,
 				A53E59A323C943C80094F6A4 /* UIColorHelper.swift in Sources */,
 				A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */,
@@ -598,8 +648,10 @@
 				A53E599A23C92EE40094F6A4 /* SettingsViewModel.swift in Sources */,
 				A53E598D23C6B63B0094F6A4 /* ViewModelWrapper.swift in Sources */,
 				A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */,
+				A53E59BB23CA98510094F6A4 /* ZoomAnimator.swift in Sources */,
 				A53E599C23C93CF40094F6A4 /* Config.swift in Sources */,
 				A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */,
+				A53E59B223CA76E50094F6A4 /* BackgroundViewController.swift in Sources */,
 				A53E59AD23C97B7B0094F6A4 /* TimerPositionSetupViewController.swift in Sources */,
 				A53E598423C6AE800094F6A4 /* TimerViewController.swift in Sources */,
 				A53E59A723C947780094F6A4 /* ConfigurationModels.swift in Sources */,

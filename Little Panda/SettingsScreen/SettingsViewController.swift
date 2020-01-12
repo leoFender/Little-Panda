@@ -68,6 +68,8 @@ extension SettingsViewController {
             presentFontSelector()
         case 2: // font color
             router.show(.colorSelection, from: self)
+        case 3: // background
+            router.show(.backgroundSelection, from: self)
         case 4: // timer poisiton
             router.show(.layoutSetup, from: self)
         default:
