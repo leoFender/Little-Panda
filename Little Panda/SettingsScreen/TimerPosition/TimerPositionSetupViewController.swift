@@ -24,7 +24,13 @@ class TimerPositionSetupViewController: BaseViewController {
                                          style: .plain,
                                          target: self,
                                          action: #selector(TimerPositionSetupViewController.saveButtonDidTap))
-        navigationItem.rightBarButtonItem = saveButton
+        
+        let recenterButton = UIBarButtonItem(title: "Center",
+                                             style: .plain,
+                                             target: self,
+                                             action: #selector(TimerPositionSetupViewController.recenter))
+        
+        navigationItem.rightBarButtonItems = [saveButton, recenterButton]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,6 +56,14 @@ class TimerPositionSetupViewController: BaseViewController {
         Config.timerLabelPosition = position
 
         navigationController?.popViewController(animated: true)
+    }
+    
+    @objc private func recenter() {
+        UIView.animate(withDuration: 0.5) {
+            self.horizontal.constant = 0
+            self.vertical.constant = 0
+            self.view.layoutIfNeeded()
+        }
     }
     
     @objc private func panDidRecognize(_ sender: UIPanGestureRecognizer) {
