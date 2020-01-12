@@ -12,6 +12,16 @@ class TimerViewController: BaseViewController, TimerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
+        
+        if let tap = navigationController?.barHideOnTapGestureRecognizer,
+            let swipe = navigationController?.barHideOnSwipeGestureRecognizer {
+            
+            navigationController?.hidesBarsOnTap = true
+            navigationController?.hidesBarsOnSwipe = true
+            background.isUserInteractionEnabled = true
+            background.addGestureRecognizer(tap)
+            background.addGestureRecognizer(swipe)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
