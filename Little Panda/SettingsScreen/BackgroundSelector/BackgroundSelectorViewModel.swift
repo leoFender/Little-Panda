@@ -3,7 +3,7 @@ import UIKit
 
 class BackgroundSelectorViewModel: NSObject {
     
-    typealias BackgroundsDataSource = UICollectionViewDiffableDataSource<Int, String>
+    typealias BackgroundsDataSource = UICollectionViewDiffableDataSource<Int, BackgroundCollectionEntry>
     
     private static let cellID = "BackgroundSelectionCell"
     private var dataSource: BackgroundsDataSource?
@@ -55,9 +55,14 @@ class BackgroundSelectorViewModel: NSObject {
     }
     
     func reloadCollectionData() {
-        var snapshot = NSDiffableDataSourceSnapshot<Int, String>()
+        var snapshot = NSDiffableDataSourceSnapshot<Int, BackgroundCollectionEntry>()
         snapshot.appendSections([0])
-        snapshot.appendItems(BackgroundSelectorViewModel.imageNames, toSection: 0)
+        
+        let currentBackground = Config.backgroundImageName
+        let data = BackgroundSelectorViewModel.imageNames.map {
+            return BackgroundCollectionEntry(name: $0, isSelected: $0 == currentBackground)
+        }
+        snapshot.appendItems(data, toSection: 0)
         dataSource?.apply(snapshot, animatingDifferences: true)
     }
     

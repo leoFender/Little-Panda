@@ -52,6 +52,7 @@
 		A5C30A6B23C68CDF00F4F7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A6A23C68CDF00F4F7B0 /* Assets.xcassets */; };
 		A5C7FE8823CAAAC3006BB342 /* BackgroundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */; };
 		A5C7FE8923CAAAC3006BB342 /* BackgroundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */; };
+		A5C7FE8E23CAC97E006BB342 /* BackgroundCollectionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		A5C30A6D23C68CE000F4F7B0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCollectionViewCell.swift; sourceTree = "<group>"; };
 		A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCollectionEntry.swift; sourceTree = "<group>"; };
 		B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Little_Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -313,10 +315,9 @@
 		A53E59B023CA76CA0094F6A4 /* BackgroundSelector */ = {
 			isa = PBXGroup;
 			children = (
+				A5C7FE8C23CAC967006BB342 /* CollectionView */,
 				A53E59B123CA76E50094F6A4 /* BackgroundViewController.swift */,
 				A53E59B323CA77030094F6A4 /* BackgroundSelectorViewModel.swift */,
-				A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */,
-				A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */,
 			);
 			path = BackgroundSelector;
 			sourceTree = "<group>";
@@ -411,6 +412,16 @@
 				A5C30A6D23C68CE000F4F7B0 /* PushNotificationPayload.apns */,
 			);
 			path = "Little Panda WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A5C7FE8C23CAC967006BB342 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */,
+				A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */,
+				A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		DEB76E41A7165CEE5000A487 /* Frameworks */ = {
@@ -630,6 +641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C7FE8823CAAAC3006BB342 /* BackgroundCollectionViewCell.swift in Sources */,
+				A5C7FE8E23CAC97E006BB342 /* BackgroundCollectionEntry.swift in Sources */,
 				A53E599623C9160F0094F6A4 /* DateHelper.swift in Sources */,
 				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
 				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,
