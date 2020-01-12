@@ -34,6 +34,7 @@ class SettingsViewController: UITableViewController {
     private func configurateUI() {
         let currentTimerFont = Config.timerFont
         fontColor.textColor = currentTimerFont.rgbColor.uiColor()
+        fontColor.dropShadow()
         timerFontLabel.text = currentTimerFont.name
         fontSizeLabel.text = "\(Int(currentTimerFont.size))"
         fontSizeStepper.value = Double(currentTimerFont.size)
