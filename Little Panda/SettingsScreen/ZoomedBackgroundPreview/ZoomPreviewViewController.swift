@@ -13,6 +13,9 @@ class ZoomPreviewViewController: BaseViewController {
                                          target: self,
                                          action: #selector(ZoomPreviewViewController.saveButtonDidTap))
         navigationItem.rightBarButtonItem = saveButton
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ZoomPreviewViewController.close))
+        imageView.addGestureRecognizer(tap)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -20,9 +23,13 @@ class ZoomPreviewViewController: BaseViewController {
         imageView.image = UIImage(named: imageName)
     }
     
-    @objc private func saveButtonDidTap() {
+    @objc private func close() {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @objc private func saveButtonDidTap() {
         Config.backgroundImageName = imageName
+        close()
     }
 }
 
