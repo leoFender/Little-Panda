@@ -7,6 +7,7 @@ class BackgroundViewController: BaseViewController {
                                              bottom: 10.0,
                                              right: 10.0)
     private var transitionController: ZoomTransitionController!
+    private var imagePicker = UIImagePickerController()
     fileprivate var selectedIndexPath: IndexPath?
     
     @ViewModel var viewModel: BackgroundSelectorViewModel
@@ -25,15 +26,54 @@ class BackgroundViewController: BaseViewController {
         viewModel.reloadCollectionData()
         transitionController = ZoomTransitionController()
     }
+    
+    private func presentImagePicker() {
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = false
+        imagePicker.delegate = self
+        
+        present(imagePicker, animated: true)
+    }
+    
+    private func imageSelected(_ image: UIImage) {
+        do {
+            try image.saveToFile()
+            Config.backgroundImageName = UIImage.customImageSelectedKey()
+        } catch {
+            print(error)
+        }
+    }
+}
+
+extension BackgroundViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        presentedViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        guard let image = (info[.originalImage] as? UIImage)?.fixedOrientation() else {
+            return
+        }
+        imageSelected(image)
+        presentedViewController?.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension BackgroundViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectedIndexPath = indexPath
-        let name = viewModel.name(with: indexPath)
-        router.zoom(.zoomBackground(name), from: self, with: transitionController)
         collectionView.deselectItem(at: indexPath, animated: false)
+        let name = viewModel.name(with: indexPath)
+        if name == "Gallery Icon" {
+            presentImagePicker()
+            return
+        }
+        
+        selectedIndexPath = indexPath
+        router.zoom(.zoomBackground(name), from: self, with: transitionController)
     }
     
     func collectionView(_ collectionView: UICollectionView,

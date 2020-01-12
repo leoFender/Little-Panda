@@ -53,6 +53,7 @@
 		A5C7FE8823CAAAC3006BB342 /* BackgroundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */; };
 		A5C7FE8923CAAAC3006BB342 /* BackgroundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */; };
 		A5C7FE8E23CAC97E006BB342 /* BackgroundCollectionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */; };
+		A5C7FE9023CAD59F006BB342 /* UIImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8F23CAD59F006BB342 /* UIImageHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 		A5C7FE8623CAAAC3006BB342 /* BackgroundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCollectionViewCell.swift; sourceTree = "<group>"; };
 		A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundCollectionViewCell.xib; sourceTree = "<group>"; };
 		A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCollectionEntry.swift; sourceTree = "<group>"; };
+		A5C7FE8F23CAD59F006BB342 /* UIImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageHelper.swift; sourceTree = "<group>"; };
 		B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Little_Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -284,6 +286,7 @@
 				A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */,
 				A53E59A223C943C80094F6A4 /* UIColorHelper.swift */,
 				A53E59AE23C983E60094F6A4 /* LabelHelper.swift */,
+				A5C7FE8F23CAD59F006BB342 /* UIImageHelper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -655,6 +658,7 @@
 				A53E599123C6CB560094F6A4 /* AppController.swift in Sources */,
 				A53E59A323C943C80094F6A4 /* UIColorHelper.swift in Sources */,
 				A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */,
+				A5C7FE9023CAD59F006BB342 /* UIImageHelper.swift in Sources */,
 				A53E599823C91DA30094F6A4 /* DateFormatterHelper.swift in Sources */,
 				A53E598A23C6AED90094F6A4 /* SettingsViewController.swift in Sources */,
 				A53E599A23C92EE40094F6A4 /* SettingsViewModel.swift in Sources */,

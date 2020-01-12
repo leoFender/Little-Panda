@@ -28,7 +28,7 @@ class ColorPickerViewController: BaseViewController {
     private func configurateUI() {
         testLabel.loadTimerConfig()
         
-        backgroundPreview.image = UIImage(named: Config.backgroundImageName)
+        backgroundPreview.image = UIImage.loadBackgroundImage()
         
         colorPicker.adjustToColor(testLabel.textColor)
     }

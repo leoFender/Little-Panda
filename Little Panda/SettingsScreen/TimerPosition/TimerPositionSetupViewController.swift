@@ -41,7 +41,7 @@ class TimerPositionSetupViewController: BaseViewController {
     private func configurateUI() {
         testLabel.loadTimerConfig()
         
-        background.image = UIImage(named: Config.backgroundImageName)
+        background.image = UIImage.loadBackgroundImage()
         
         let currentPosition = Config.timerLabelPosition
         UIView.animate(withDuration: 0.5, animations: {

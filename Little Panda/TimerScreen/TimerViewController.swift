@@ -42,7 +42,7 @@ class TimerViewController: BaseViewController, TimerDelegate {
     
     private func configurateUI() {
         timeLabel.loadTimerConfig()
-        background.image = UIImage(named: Config.backgroundImageName)
+        background.image = UIImage.loadBackgroundImage()
         
         let position = Config.timerLabelPosition
         UIView.animate(withDuration: 1.0,
