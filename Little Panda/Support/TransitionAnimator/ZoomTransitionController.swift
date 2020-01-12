@@ -4,7 +4,6 @@ import UIKit
 class ZoomTransitionController: NSObject {
     
     let animator: ZoomAnimator
-//    let interactionController: ZoomDismissalInteractionController
     var isInteractive: Bool = false
 
     weak var fromDelegate: ZoomAnimatorDelegate?
@@ -12,12 +11,7 @@ class ZoomTransitionController: NSObject {
     
     override init() {
         animator = ZoomAnimator()
-//        interactionController = ZoomDismissalInteractionController()
         super.init()
-    }
-    
-    func didPanWith(gestureRecognizer: UIPanGestureRecognizer) {
-//        self.interactionController.didPanWith(gestureRecognizer: gestureRecognizer)
     }
 }
 

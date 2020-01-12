@@ -6,7 +6,7 @@ class BackgroundViewController: BaseViewController {
                                              left: 10.0,
                                              bottom: 10.0,
                                              right: 10.0)
-    private let transitionController = ZoomTransitionController()
+    private var transitionController: ZoomTransitionController!
     fileprivate var selectedIndexPath: IndexPath?
     
     @ViewModel var viewModel: BackgroundSelectorViewModel
@@ -23,6 +23,7 @@ class BackgroundViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.reloadCollectionData()
+        transitionController = ZoomTransitionController()
     }
 }
 
