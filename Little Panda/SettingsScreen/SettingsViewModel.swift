@@ -13,7 +13,13 @@ class SettingsViewModel {
         }
         
         let new = FontConfiguration(name: font.fontName, size: current.size, rgbColor: current.rgbColor)
-        Config.pandaFont = new
+        
+        switch screen {
+        case .panda:
+            Config.pandaFont = new
+        default:
+            Config.timerFont = new
+        }
     }
     
     func newSizeSelected(_ size: CGFloat) {

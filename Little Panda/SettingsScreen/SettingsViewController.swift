@@ -96,7 +96,6 @@ extension SettingsViewController: UIFontPickerViewControllerDelegate {
         
         if let descriptor = viewController.selectedFontDescriptor {
             let font = UIFont(descriptor: descriptor, size: 25.0)
-            print(font)
             viewModel.newFontSelected(font, for: fontConfigCurrentScreen)
             configurateUI()
         }
