@@ -14,6 +14,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gJc-5Z-eCh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="xff-br-j8F" kind="relationship" relationship="rootViewController" id="auB-lu-k8h"/>
@@ -31,32 +32,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxo-EB-Wqj">
-                                <rect key="frame" x="187" y="236" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Timer"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxo-EB-Wqj">
+                                <rect key="frame" x="80" y="421" width="254" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="New Year Timer">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="timerDidTap" destination="xff-br-j8F" eventType="touchUpInside" id="sdR-o4-kJr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-y9-roj">
-                                <rect key="frame" x="168" y="460" width="43" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Panda"/>
-                                <connections>
-                                    <action selector="pandaDidTap" destination="xff-br-j8F" eventType="touchUpInside" id="H81-Sq-0vc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrs-0a-J9w">
-                                <rect key="frame" x="186" y="380" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrs-0a-J9w">
+                                <rect key="frame" x="138.5" y="629" width="137" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="settingsDidTap" destination="xff-br-j8F" eventType="touchUpInside" id="jgL-jy-tCs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-y9-roj">
+                                <rect key="frame" x="111" y="525" width="192" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Little Panda">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pandaDidTap" destination="xff-br-j8F" eventType="touchUpInside" id="H81-Sq-0vc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G3m-y9-roj" firstAttribute="centerX" secondItem="V0h-rB-xVx" secondAttribute="centerX" id="Tcg-of-ghF"/>
+                            <constraint firstItem="Kxo-EB-Wqj" firstAttribute="centerX" secondItem="V0h-rB-xVx" secondAttribute="centerX" id="Ykw-U7-D1g"/>
+                            <constraint firstItem="Kxo-EB-Wqj" firstAttribute="centerY" secondItem="V0h-rB-xVx" secondAttribute="centerY" id="uX7-2Z-TXM"/>
+                            <constraint firstItem="G3m-y9-roj" firstAttribute="top" secondItem="Kxo-EB-Wqj" secondAttribute="bottom" constant="50" id="xLL-KW-YGc"/>
+                            <constraint firstItem="Zrs-0a-J9w" firstAttribute="top" secondItem="G3m-y9-roj" secondAttribute="bottom" constant="50" id="yJi-fk-fBN"/>
+                            <constraint firstItem="Zrs-0a-J9w" firstAttribute="centerX" secondItem="V0h-rB-xVx" secondAttribute="centerX" id="zsH-zg-xIo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AF6-Uc-hLH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main Menu" id="d8p-fJ-ZXp"/>
