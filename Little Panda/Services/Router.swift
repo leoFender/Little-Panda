@@ -31,9 +31,8 @@ enum Screens {
             return "BackgroundViewController"
         case .zoomBackground(_):
             return "ZoomPreviewViewController"
-        default:
-            //TODO: placeholder
-            return "MainMenuViewController"
+        case .panda:
+            return "PandaViewController"
         }
     }
 }

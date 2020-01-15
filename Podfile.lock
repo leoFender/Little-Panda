@@ -1,16 +1,20 @@
 PODS:
   - ChromaColorPicker (1.8.0)
+  - TYProgressBar (0.7.0)
 
 DEPENDENCIES:
   - ChromaColorPicker
+  - TYProgressBar
 
 SPEC REPOS:
   trunk:
     - ChromaColorPicker
+    - TYProgressBar
 
 SPEC CHECKSUMS:
   ChromaColorPicker: 2e47f5acb805d53350fb7af1b511bc534b38ee31
+  TYProgressBar: 0d31f25475dc11e4b0ed0c68e38e6a1719e9059c
 
-PODFILE CHECKSUM: 20f84e98154d156848adf2b975f58be3084a1706
+PODFILE CHECKSUM: f542413191bfd5d6c177c7a1a95675ab40a9a2db
 
 COCOAPODS: 1.8.4

@@ -30,6 +30,10 @@ extension Date {
         return 0
     }
     
+    func plusXHours(x: Int) -> Date {
+        return Calendar.current.date(byAdding: .hour, value: x, to: self) ?? Date()
+    }
+    
     private static func findNewYear() -> Date? {
         let calendar: Calendar = Calendar.current
         

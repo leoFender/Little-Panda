@@ -23,4 +23,13 @@ struct Config {
     
     @ConfigProperty(key: "is_custom_background", defaultValue: false)
     static var isCustomBackground: Bool
+    
+    @ConfigProperty(key: "last_panda_entry", defaultValue: 0)
+    static var lastPandaEntry: Int
+    
+    @ConfigProperty(key: "panda_available", defaultValue: Date())
+    static var pandaAvailable: Date
+    
+    @ConfigProperty(key: "emergency_available", defaultValue: Date())
+    static var emergencyAvailable: Date
 }

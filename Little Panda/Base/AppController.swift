@@ -10,5 +10,6 @@ struct AppController {
         store.registerFactory { TimerViewModel() }
         store.registerFactory { SettingsViewModel() }
         store.registerFactory { BackgroundSelectorViewModel() }
+        store.registerFactory { PandaViewModel() }
     }
 }

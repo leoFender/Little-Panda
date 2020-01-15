@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'Little Panda' do
   pod 'ChromaColorPicker'
+  pod 'TYProgressBar'
 end

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rhv-s4-K2j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rhv-s4-K2j">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -120,16 +120,64 @@
             </objects>
             <point key="canvasLocation" x="893" y="439"/>
         </scene>
-        <!--Panda View Controller-->
+        <!--Panda Energy Generator-->
         <scene sceneID="K17-MD-8oA">
             <objects>
-                <viewController storyboardIdentifier="PandaViewController" id="NRo-Cj-r63" customClass="PandaViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PandaViewController" title="Panda Energy Generator" id="NRo-Cj-r63" customClass="PandaViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QIu-Fs-7yg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a test of very long text for the purpose of testing a long text blba bla bla averylongwordwithoutbreaks, aha. So. OK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cac-xJ-giH">
+                                <rect key="frame" x="20" y="272.5" width="374" height="251"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8B-dj-Dp1">
+                                <rect key="frame" x="97" y="288" width="220" height="220"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="iIv-NT-V9h"/>
+                                    <constraint firstAttribute="width" constant="220" id="sY6-vx-P28"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-charging in progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBG-dP-344">
+                                <rect key="frame" x="103" y="558" width="208" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVM-yb-nFn">
+                                <rect key="frame" x="123" y="829" width="168" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Emergency Generator">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="emergencyDidTap" destination="NRo-Cj-r63" eventType="touchUpInside" id="VWN-AE-4eM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="R8B-dj-Dp1" firstAttribute="centerY" secondItem="QIu-Fs-7yg" secondAttribute="centerY" constant="-50" id="8Bn-Gz-pvt"/>
+                            <constraint firstItem="R8B-dj-Dp1" firstAttribute="centerX" secondItem="QIu-Fs-7yg" secondAttribute="centerX" id="DgD-9e-sXR"/>
+                            <constraint firstItem="lLP-Sn-tiT" firstAttribute="trailing" secondItem="cac-xJ-giH" secondAttribute="trailing" constant="20" id="IGO-42-Nki"/>
+                            <constraint firstItem="YVM-yb-nFn" firstAttribute="bottom" secondItem="lLP-Sn-tiT" secondAttribute="bottom" id="OKe-1e-JNK"/>
+                            <constraint firstItem="cac-xJ-giH" firstAttribute="leading" secondItem="lLP-Sn-tiT" secondAttribute="leading" constant="20" id="Wld-pk-B8a"/>
+                            <constraint firstItem="cac-xJ-giH" firstAttribute="centerY" secondItem="QIu-Fs-7yg" secondAttribute="centerY" constant="-50" id="dXb-V9-Ae1"/>
+                            <constraint firstItem="fBG-dP-344" firstAttribute="top" secondItem="R8B-dj-Dp1" secondAttribute="bottom" constant="50" id="hyc-80-qbI"/>
+                            <constraint firstItem="YVM-yb-nFn" firstAttribute="centerX" secondItem="QIu-Fs-7yg" secondAttribute="centerX" id="idu-5C-WgN"/>
+                            <constraint firstItem="fBG-dP-344" firstAttribute="centerX" secondItem="QIu-Fs-7yg" secondAttribute="centerX" id="zay-v2-WTI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lLP-Sn-tiT"/>
                     </view>
+                    <connections>
+                        <outlet property="loadingLabel" destination="fBG-dP-344" id="fBv-PU-GDK"/>
+                        <outlet property="pandaLabel" destination="cac-xJ-giH" id="auq-bV-uTK"/>
+                        <outlet property="progressViewContainer" destination="R8B-dj-Dp1" id="iFC-h5-1Pi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8AW-Sz-NPO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -449,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqG-QU-EwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="-1059"/>
+            <point key="canvasLocation" x="3536" y="-263"/>
         </scene>
         <!--Position setup-->
         <scene sceneID="VGu-QV-H5y">
@@ -529,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Xn-Qj-cPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3216" y="-1059"/>
+            <point key="canvasLocation" x="2817" y="-263"/>
         </scene>
         <!--Preview-->
         <scene sceneID="3Yf-Kf-r9u">
@@ -558,7 +606,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFk-H2-BDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4175" y="-1056"/>
+            <point key="canvasLocation" x="4243" y="-263"/>
         </scene>
     </scenes>
     <resources>

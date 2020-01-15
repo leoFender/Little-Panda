@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6DD8F8C29A993692BE2B6133 /* Pods_Little_Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */; };
+		A50CBDB323CE70D600EC484D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB223CE70D600EC484D /* Strings.swift */; };
+		A50CBDB523CE77E000EC484D /* PandaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB423CE77E000EC484D /* PandaViewModel.swift */; };
+		A50CBDB723CEA06900EC484D /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB623CEA06900EC484D /* AlertControllerHelper.swift */; };
 		A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597623C696760094F6A4 /* MainMenuViewController.swift */; };
 		A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597923C6975E0094F6A4 /* BaseViewController.swift */; };
 		A53E597D23C697D80094F6A4 /* DIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597C23C697D80094F6A4 /* DIStore.swift */; };
@@ -108,6 +111,9 @@
 /* Begin PBXFileReference section */
 		3F0CE0C16916A360A5AADE50 /* Pods-Little Panda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Panda.release.xcconfig"; path = "Target Support Files/Pods-Little Panda/Pods-Little Panda.release.xcconfig"; sourceTree = "<group>"; };
 		43C318133240756A30520F53 /* Pods-Little Panda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Panda.debug.xcconfig"; path = "Target Support Files/Pods-Little Panda/Pods-Little Panda.debug.xcconfig"; sourceTree = "<group>"; };
+		A50CBDB223CE70D600EC484D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A50CBDB423CE77E000EC484D /* PandaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaViewModel.swift; sourceTree = "<group>"; };
+		A50CBDB623CEA06900EC484D /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
 		A53E597623C696760094F6A4 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		A53E597923C6975E0094F6A4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A53E597C23C697D80094F6A4 /* DIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIStore.swift; sourceTree = "<group>"; };
@@ -250,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				A53E598623C6AEB10094F6A4 /* PandaViewController.swift */,
+				A50CBDB423CE77E000EC484D /* PandaViewModel.swift */,
 			);
 			path = PandaScreen;
 			sourceTree = "<group>";
@@ -275,6 +282,7 @@
 				A53E599423C915FF0094F6A4 /* Extensions */,
 				A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */,
 				A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */,
+				A50CBDB223CE70D600EC484D /* Strings.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 				A53E59A223C943C80094F6A4 /* UIColorHelper.swift */,
 				A53E59AE23C983E60094F6A4 /* LabelHelper.swift */,
 				A5C7FE8F23CAD59F006BB342 /* UIImageHelper.swift */,
+				A50CBDB623CEA06900EC484D /* AlertControllerHelper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -644,6 +653,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C7FE8823CAAAC3006BB342 /* BackgroundCollectionViewCell.swift in Sources */,
+				A50CBDB323CE70D600EC484D /* Strings.swift in Sources */,
+				A50CBDB723CEA06900EC484D /* AlertControllerHelper.swift in Sources */,
 				A5C7FE8E23CAC97E006BB342 /* BackgroundCollectionEntry.swift in Sources */,
 				A53E599623C9160F0094F6A4 /* DateHelper.swift in Sources */,
 				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
@@ -665,6 +676,7 @@
 				A53E598D23C6B63B0094F6A4 /* ViewModelWrapper.swift in Sources */,
 				A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */,
 				A53E59BB23CA98510094F6A4 /* ZoomAnimator.swift in Sources */,
+				A50CBDB523CE77E000EC484D /* PandaViewModel.swift in Sources */,
 				A53E599C23C93CF40094F6A4 /* Config.swift in Sources */,
 				A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */,
 				A53E59B223CA76E50094F6A4 /* BackgroundViewController.swift in Sources */,
