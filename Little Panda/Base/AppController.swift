@@ -5,6 +5,7 @@ struct AppController {
     static func launch() {
         let store = DIStore()
         store.register(RouterService(), type: Router.self)
+        store.register(NotificationHandler(), type: NotificationService.self)
         
         store.registerFactory { MainMenuViewModel() }
         store.registerFactory { TimerViewModel() }

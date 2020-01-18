@@ -114,10 +114,18 @@ extension SettingsViewController {
     }
     
     @IBAction func pandaNotificationSwitchValueDidChange(_ sender: UISwitch) {
-        viewModel.toggleNotifications(.panda)
+        viewModel.toggleNotifications(.panda) { [weak self] in
+            DispatchQueue.main.async {
+                self?.configurateUI()
+            }
+        }
     }
     
     @IBAction func timerNotificationSwitchValueDidChange(_ sender: UISwitch) {
-        viewModel.toggleNotifications(.timer)
+        viewModel.toggleNotifications(.timer) { [weak self] in
+            DispatchQueue.main.async {
+                self?.configurateUI()
+            }
+        }
     }
 }

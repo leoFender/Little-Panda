@@ -17,6 +17,8 @@ enum EmergencyState {
 
 class PandaViewModel {
     
+    @Injected var notifications: NotificationService
+    
     private static let rechargeTime: TimeInterval = 86400
     private var available = Config.pandaAvailable
     private weak var delegate: PandaStateObserver?
@@ -53,6 +55,12 @@ class PandaViewModel {
         
         let newState = PandaState.active(entry)
         delegate?.didChangeState(newState)
+        
+        available = Date().plusXHours(x: 24)
+        Config.pandaAvailable = available
+        if Config.pandaNotification {
+            notifications.schedule(.panda)
+        }
     }
     
     func checkEmergency() -> EmergencyState {
@@ -104,8 +112,6 @@ class PandaViewModel {
     }
     
     private func expirePanda() {
-        available = Date().plusXHours(x: 24)
-        Config.pandaAvailable = available
         setupUpdateTimer()
         update()
     }

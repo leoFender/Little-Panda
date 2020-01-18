@@ -83,7 +83,7 @@
         <!--Countdown-->
         <scene sceneID="0TI-FR-ZRE">
             <objects>
-                <viewController storyboardIdentifier="TimerViewController" title="Countdown" id="ZZV-8l-taw" customClass="TimerViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimerViewController" title="Countdown" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZZV-8l-taw" customClass="TimerViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zx-Vc-qL7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--Panda Energy Generator-->
         <scene sceneID="K17-MD-8oA">
             <objects>
-                <viewController storyboardIdentifier="PandaViewController" title="Panda Energy Generator" id="NRo-Cj-r63" customClass="PandaViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PandaViewController" title="Panda Energy Generator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NRo-Cj-r63" customClass="PandaViewController" customModule="Little_Panda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QIu-Fs-7yg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

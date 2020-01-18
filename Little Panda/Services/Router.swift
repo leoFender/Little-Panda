@@ -15,7 +15,7 @@ enum Screens {
         return storyboard.instantiateViewController(identifier: storyboardID())
     }
     
-    private func storyboardID() -> String {
+    func storyboardID() -> String {
         switch self {
         case .menu:
             return "MainMenuViewController"

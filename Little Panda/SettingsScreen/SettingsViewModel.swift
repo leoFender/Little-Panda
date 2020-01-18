@@ -3,6 +3,8 @@ import UIKit
 
 class SettingsViewModel {
     
+    @Injected var notifications: NotificationService
+    
     func newFontSelected(_ font: UIFont, `for` screen: Screens) {
         var current: FontConfiguration
         switch screen {
@@ -47,12 +49,45 @@ class SettingsViewModel {
         Config.pandaFont = new
     }
     
-    func toggleNotifications(_ screen: Screens) {
-        switch screen {
-        case .panda:
-            Config.pandaNotification = !Config.pandaNotification
-        default:
-            Config.timerNotification = !Config.timerNotification
+    func toggleNotifications(_ screen: Screens, completion: @escaping () -> Void) {
+        notifications.requestAuthorization { [weak self] granted, error in
+            if error != nil {
+                print(error!)
+            } else {
+                if granted {
+                    switch screen {
+                    case .panda:
+                        self?.togglePandaNotifications()
+                    default:
+                        self?.toggleCountdownNotifications()
+                    }
+                }
+            }
+            
+            completion()
+        } // requestAuth
+    } // func
+}
+
+extension SettingsViewModel {
+    
+    private func togglePandaNotifications() {
+        let current = !Config.pandaNotification
+        Config.pandaNotification = current
+        if current {
+            notifications.schedule(.panda)
+        } else {
+            notifications.clear(.panda)
+        }
+    }
+    
+    private func toggleCountdownNotifications() {
+        let current = !Config.timerNotification
+        Config.timerNotification = current
+        if current {
+            notifications.schedule(.newYear)
+        } else {
+            notifications.clear(.newYear)
         }
     }
 }

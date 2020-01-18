@@ -11,6 +11,7 @@
 		A50CBDB323CE70D600EC484D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB223CE70D600EC484D /* Strings.swift */; };
 		A50CBDB523CE77E000EC484D /* PandaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB423CE77E000EC484D /* PandaViewModel.swift */; };
 		A50CBDB723CEA06900EC484D /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB623CEA06900EC484D /* AlertControllerHelper.swift */; };
+		A50CBDB923CEA9AB00EC484D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB823CEA9AB00EC484D /* NotificationService.swift */; };
 		A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597623C696760094F6A4 /* MainMenuViewController.swift */; };
 		A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597923C6975E0094F6A4 /* BaseViewController.swift */; };
 		A53E597D23C697D80094F6A4 /* DIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597C23C697D80094F6A4 /* DIStore.swift */; };
@@ -114,6 +115,7 @@
 		A50CBDB223CE70D600EC484D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A50CBDB423CE77E000EC484D /* PandaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaViewModel.swift; sourceTree = "<group>"; };
 		A50CBDB623CEA06900EC484D /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
+		A50CBDB823CEA9AB00EC484D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		A53E597623C696760094F6A4 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		A53E597923C6975E0094F6A4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A53E597C23C697D80094F6A4 /* DIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIStore.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				A53E597E23C69AE70094F6A4 /* ServiceWrapper.swift */,
 				A53E598023C6A8570094F6A4 /* Router.swift */,
 				A53E599B23C93CF40094F6A4 /* Config.swift */,
+				A50CBDB823CEA9AB00EC484D /* NotificationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				A50CBDB323CE70D600EC484D /* Strings.swift in Sources */,
 				A50CBDB723CEA06900EC484D /* AlertControllerHelper.swift in Sources */,
 				A5C7FE8E23CAC97E006BB342 /* BackgroundCollectionEntry.swift in Sources */,
+				A50CBDB923CEA9AB00EC484D /* NotificationService.swift in Sources */,
 				A53E599623C9160F0094F6A4 /* DateHelper.swift in Sources */,
 				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
 				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,

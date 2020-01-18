@@ -9,10 +9,10 @@ struct Config {
     @ConfigProperty(key: "timer_font", defaultValue: FontConfiguration.base())
     static var timerFont: FontConfiguration
     
-    @ConfigProperty(key: "timer_notifications", defaultValue: true)
+    @ConfigProperty(key: "timer_notifications", defaultValue: false)
     static var timerNotification: Bool
     
-    @ConfigProperty(key: "panda_notifications", defaultValue: true)
+    @ConfigProperty(key: "panda_notifications", defaultValue: false)
     static var pandaNotification: Bool
     
     @ConfigProperty(key: "timer_label_position", defaultValue: PositionConfiguration.base())
@@ -24,7 +24,7 @@ struct Config {
     @ConfigProperty(key: "is_custom_background", defaultValue: false)
     static var isCustomBackground: Bool
     
-    @ConfigProperty(key: "last_panda_entry", defaultValue: 0)
+    @ConfigProperty(key: "last_panda_entry", defaultValue: -1)
     static var lastPandaEntry: Int
     
     @ConfigProperty(key: "panda_available", defaultValue: Date())
