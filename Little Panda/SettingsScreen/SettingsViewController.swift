@@ -1,10 +1,9 @@
 import UIKit
 
-class SettingsViewController: UITableViewController {
+class SettingsViewController: BaseTableViewController {
     private var fontConfigCurrentScreen: Screens = .timer
     
     @ViewModel var viewModel: SettingsViewModel
-    @Injected var router: Router
     
     @IBOutlet weak var timerFontLabel: UILabel!
     @IBOutlet weak var pandaFontLabel: UILabel!

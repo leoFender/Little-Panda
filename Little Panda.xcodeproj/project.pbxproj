@@ -12,6 +12,7 @@
 		A50CBDB523CE77E000EC484D /* PandaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB423CE77E000EC484D /* PandaViewModel.swift */; };
 		A50CBDB723CEA06900EC484D /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB623CEA06900EC484D /* AlertControllerHelper.swift */; };
 		A50CBDB923CEA9AB00EC484D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDB823CEA9AB00EC484D /* NotificationService.swift */; };
+		A50CBDBB23D28D3400EC484D /* NewYearNotificationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CBDBA23D28D3400EC484D /* NewYearNotificationEnum.swift */; };
 		A53E597723C696760094F6A4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597623C696760094F6A4 /* MainMenuViewController.swift */; };
 		A53E597A23C6975E0094F6A4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597923C6975E0094F6A4 /* BaseViewController.swift */; };
 		A53E597D23C697D80094F6A4 /* DIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597C23C697D80094F6A4 /* DIStore.swift */; };
@@ -116,6 +117,7 @@
 		A50CBDB423CE77E000EC484D /* PandaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaViewModel.swift; sourceTree = "<group>"; };
 		A50CBDB623CEA06900EC484D /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
 		A50CBDB823CEA9AB00EC484D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A50CBDBA23D28D3400EC484D /* NewYearNotificationEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYearNotificationEnum.swift; sourceTree = "<group>"; };
 		A53E597623C696760094F6A4 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		A53E597923C6975E0094F6A4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A53E597C23C697D80094F6A4 /* DIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIStore.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				A53E599F23C940D80094F6A4 /* Models */,
 				A53E599423C915FF0094F6A4 /* Extensions */,
 				A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */,
+				A50CBDBA23D28D3400EC484D /* NewYearNotificationEnum.swift */,
 				A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */,
 				A50CBDB223CE70D600EC484D /* Strings.swift */,
 			);
@@ -690,6 +693,7 @@
 				A53E598F23C6C0370094F6A4 /* MainMenuViewModel.swift in Sources */,
 				A53E597F23C69AE70094F6A4 /* ServiceWrapper.swift in Sources */,
 				A53E597D23C697D80094F6A4 /* DIStore.swift in Sources */,
+				A50CBDBB23D28D3400EC484D /* NewYearNotificationEnum.swift in Sources */,
 				A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

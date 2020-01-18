@@ -105,10 +105,6 @@ struct NotificationHandler: NotificationService {
         }
     }
     
-    private func scheduleNewYear() {
-        
-    }
-    
     private func schedulePanda() {
         let fireTime = Config.pandaAvailable.timeIntervalSince(Date())
         if fireTime < 0 {
@@ -126,5 +122,11 @@ struct NotificationHandler: NotificationService {
                                             content: content,
                                             trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+    
+    private func scheduleNewYear() {
+        for ntf in NewYearNotifications.fullList {
+            UNUserNotificationCenter.current().add(ntf.formRequest(), withCompletionHandler: nil)
+        }
     }
 }
