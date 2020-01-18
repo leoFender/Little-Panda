@@ -39,7 +39,6 @@ class SettingsViewController: BaseTableViewController {
         fontSizeStepper.value = Double(currentTimerFont.size)
         
         let currentPandaFont = Config.pandaFont
-        pandaFontLabel.textColor = currentPandaFont.rgbColor.uiColor()
         pandaFontLabel.text = currentPandaFont.name
         
         timerNotificationSwitch.isOn = Config.timerNotification
