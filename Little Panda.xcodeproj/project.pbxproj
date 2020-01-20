@@ -40,6 +40,12 @@
 		A53E59BB23CA98510094F6A4 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BA23CA98510094F6A4 /* ZoomAnimator.swift */; };
 		A53E59BD23CA9A290094F6A4 /* ZoomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BC23CA9A290094F6A4 /* ZoomTransitionController.swift */; };
 		A53E59C023CA9CAF0094F6A4 /* ZoomPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BF23CA9CAF0094F6A4 /* ZoomPreviewViewController.swift */; };
+		A583B50E23D67042007D7236 /* ViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */; };
+		A583B50F23D67051007D7236 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */; };
+		A583B51023D67056007D7236 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599523C9160F0094F6A4 /* DateHelper.swift */; };
+		A583B51123D67060007D7236 /* DIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597C23C697D80094F6A4 /* DIStore.swift */; };
+		A583B51223D67060007D7236 /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597E23C69AE70094F6A4 /* ServiceWrapper.swift */; };
+		A583B51323D67070007D7236 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599223C7E5F80094F6A4 /* TimerViewModel.swift */; };
 		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
 		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
 		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
@@ -710,9 +716,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A583B51323D67070007D7236 /* TimerViewModel.swift in Sources */,
+				A583B50F23D67051007D7236 /* DateFormatterHelper.swift in Sources */,
+				A583B50E23D67042007D7236 /* ViewModelWrapper.swift in Sources */,
+				A583B51123D67060007D7236 /* DIStore.swift in Sources */,
+				A583B51223D67060007D7236 /* ServiceWrapper.swift in Sources */,
 				A5C30A6723C68CDF00F4F7B0 /* NotificationController.swift in Sources */,
 				A5C30A6923C68CDF00F4F7B0 /* ComplicationController.swift in Sources */,
 				A5C30A6523C68CDF00F4F7B0 /* ExtensionDelegate.swift in Sources */,
+				A583B51023D67056007D7236 /* DateHelper.swift in Sources */,
 				A5C30A6323C68CDF00F4F7B0 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -897,7 +909,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
@@ -919,7 +931,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
@@ -938,7 +950,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
@@ -957,7 +969,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
