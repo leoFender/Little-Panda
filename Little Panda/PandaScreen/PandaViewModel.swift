@@ -18,8 +18,8 @@ enum EmergencyState {
 class PandaViewModel {
     
     @Injected var notifications: NotificationService
-    
-    private static let rechargeTime: TimeInterval = 86400
+    @Injected var watchConnection: WatchConnectivityProvider
+
     private var available = Config.pandaAvailable
     private weak var delegate: PandaStateObserver?
     private var updateTimer: Timer?
@@ -57,6 +57,7 @@ class PandaViewModel {
         delegate?.didChangeState(newState)
         
         available = Date().plusXHours(x: 24)
+        watchConnection.send(.pandaAvailableDate(available))
         Config.pandaAvailable = available
         if Config.pandaNotification {
             notifications.schedule(.panda)
@@ -79,6 +80,9 @@ class PandaViewModel {
     
     func activateEmergency() {
         releaseTimers()
+        available = Date.distantPast
+        watchConnection.send(.pandaAvailableDate(available))
+        Config.pandaAvailable = available
         delegate?.didChangeState(.inactive)
         Config.emergencyAvailable = Date().plusXHours(x: 72)
     }
@@ -100,7 +104,7 @@ class PandaViewModel {
     }
     
     private func rechargeProgress(_ timeLeft: TimeInterval) -> Double {
-        return 1 - timeLeft / PandaViewModel.rechargeTime
+        return 1 - timeLeft / SharedConstants.rechargeTime
     }
     
     private func setupUpdateTimer() {

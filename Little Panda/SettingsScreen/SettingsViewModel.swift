@@ -4,6 +4,7 @@ import UIKit
 class SettingsViewModel {
     
     @Injected var notifications: NotificationService
+    @Injected var watchConnection: WatchConnectivityProvider
     
     func newFontSelected(_ font: UIFont, `for` screen: Screens) {
         var current: FontConfiguration
@@ -67,6 +68,13 @@ class SettingsViewModel {
             completion()
         } // requestAuth
     } // func
+    
+    func selectWatchTimerDisplay(_ index: Int) {
+        let model: TransferModel = .complicationIndex(index)
+        watchConnection.send(model)
+        
+        Config.watchFaceTimerIndex = index
+    }
 }
 
 extension SettingsViewModel {

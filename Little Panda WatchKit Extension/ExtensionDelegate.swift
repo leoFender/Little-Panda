@@ -2,12 +2,18 @@ import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
+    private var connectivity: PhoneConnectivityProvider?
+    
     func applicationDidFinishLaunching() {
         let store = DIStore()
-        store.registerFactory { TimerViewModel() }
+        store.registerFactory { InterfaceViewModel() }
+        connectivity = PhoneConnectivityService()
+        store.register(connectivity!, type: PhoneConnectivityProvider.self)
+        connectivity?.askPhoneForUpdates()
     }
 
     func applicationDidBecomeActive() {
+        connectivity?.askPhoneForUpdates()
     }
 
     func applicationWillResignActive() {

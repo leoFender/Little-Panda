@@ -13,6 +13,7 @@ class SettingsViewController: BaseTableViewController {
     @IBOutlet weak var fontSizeStepper: UIStepper!
     @IBOutlet weak var fontSizeLabel: UILabel!
     @IBOutlet weak var fontColor: UILabel!
+    @IBOutlet weak var watchTimerSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,8 @@ class SettingsViewController: BaseTableViewController {
         pandaNotificationSwitch.isOn = Config.pandaNotification
         
         timerBackgroundLabel.text = Config.backgroundImageName
+        
+        watchTimerSegmentedControl.selectedSegmentIndex = Config.watchFaceTimerIndex
     }
 }
 
@@ -125,5 +128,9 @@ extension SettingsViewController {
                 self?.configurateUI()
             }
         }
+    }
+    
+    @IBAction func watchTimerSegmentDidChange(_ sender: UISegmentedControl) {
+        viewModel.selectWatchTimerDisplay(sender.selectedSegmentIndex)
     }
 }

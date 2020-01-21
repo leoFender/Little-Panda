@@ -46,6 +46,14 @@
 		A583B51123D67060007D7236 /* DIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597C23C697D80094F6A4 /* DIStore.swift */; };
 		A583B51223D67060007D7236 /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E597E23C69AE70094F6A4 /* ServiceWrapper.swift */; };
 		A583B51323D67070007D7236 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599223C7E5F80094F6A4 /* TimerViewModel.swift */; };
+		A583B51523D698B9007D7236 /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B51423D698B9007D7236 /* WatchConnectivity.swift */; };
+		A583B51623D69EA2007D7236 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */; };
+		A583B51823D69EB6007D7236 /* WatchConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B51723D69EB6007D7236 /* WatchConfig.swift */; };
+		A583B51A23D69FCB007D7236 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B51923D69FCB007D7236 /* SharedConstants.swift */; };
+		A583B51B23D69FCB007D7236 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B51923D69FCB007D7236 /* SharedConstants.swift */; };
+		A583B51E23D6A052007D7236 /* InterfaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B51C23D6A052007D7236 /* InterfaceViewModel.swift */; };
+		A583B52023D6A64F007D7236 /* SharedDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B51F23D6A64F007D7236 /* SharedDataModels.swift */; };
+		A583B52623D6ACC4007D7236 /* PhoneConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B52423D6ACC4007D7236 /* PhoneConnectivity.swift */; };
 		A5C30A3323C68CDD00F4F7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */; };
 		A5C30A3523C68CDD00F4F7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */; };
 		A5C30A3A23C68CDD00F4F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C30A3823C68CDD00F4F7B0 /* Main.storyboard */; };
@@ -65,6 +73,7 @@
 		A5C7FE8923CAAAC3006BB342 /* BackgroundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */; };
 		A5C7FE8E23CAC97E006BB342 /* BackgroundCollectionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */; };
 		A5C7FE9023CAD59F006BB342 /* UIImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8F23CAD59F006BB342 /* UIImageHelper.swift */; };
+		A5E9B74A23D6C6F40009BFE3 /* SharedDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B51F23D6A64F007D7236 /* SharedDataModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +160,12 @@
 		A53E59BA23CA98510094F6A4 /* ZoomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
 		A53E59BC23CA9A290094F6A4 /* ZoomTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionController.swift; sourceTree = "<group>"; };
 		A53E59BF23CA9CAF0094F6A4 /* ZoomPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomPreviewViewController.swift; sourceTree = "<group>"; };
+		A583B51423D698B9007D7236 /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
+		A583B51723D69EB6007D7236 /* WatchConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConfig.swift; sourceTree = "<group>"; };
+		A583B51923D69FCB007D7236 /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		A583B51C23D6A052007D7236 /* InterfaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceViewModel.swift; sourceTree = "<group>"; };
+		A583B51F23D6A64F007D7236 /* SharedDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataModels.swift; sourceTree = "<group>"; };
+		A583B52423D6ACC4007D7236 /* PhoneConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnectivity.swift; sourceTree = "<group>"; };
 		A5C30A2F23C68CDD00F4F7B0 /* Little Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Panda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C30A3223C68CDD00F4F7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C30A3423C68CDD00F4F7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +265,7 @@
 				A53E598023C6A8570094F6A4 /* Router.swift */,
 				A53E599B23C93CF40094F6A4 /* Config.swift */,
 				A50CBDB823CEA9AB00EC484D /* NotificationService.swift */,
+				A583B51423D698B9007D7236 /* WatchConnectivity.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -295,6 +311,7 @@
 				A50CBDBA23D28D3400EC484D /* NewYearNotificationEnum.swift */,
 				A53E599D23C93D150094F6A4 /* UserDefaultsWrapper.swift */,
 				A50CBDB223CE70D600EC484D /* Strings.swift */,
+				A583B51923D69FCB007D7236 /* SharedConstants.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -316,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				A53E59A623C947780094F6A4 /* ConfigurationModels.swift */,
+				A583B51F23D6A64F007D7236 /* SharedDataModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,6 +379,24 @@
 				A53E59BF23CA9CAF0094F6A4 /* ZoomPreviewViewController.swift */,
 			);
 			path = ZoomedBackgroundPreview;
+			sourceTree = "<group>";
+		};
+		A583B52223D6AA8E007D7236 /* Main Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A5C30A6223C68CDF00F4F7B0 /* InterfaceController.swift */,
+				A583B51C23D6A052007D7236 /* InterfaceViewModel.swift */,
+			);
+			path = "Main Interface";
+			sourceTree = "<group>";
+		};
+		A583B52323D6AA9E007D7236 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A583B51723D69EB6007D7236 /* WatchConfig.swift */,
+				A583B52423D6ACC4007D7236 /* PhoneConnectivity.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		A5C30A2623C68CDD00F4F7B0 = {
@@ -427,7 +463,8 @@
 		A5C30A6123C68CDF00F4F7B0 /* Little Panda WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A5C30A6223C68CDF00F4F7B0 /* InterfaceController.swift */,
+				A583B52323D6AA9E007D7236 /* Support */,
+				A583B52223D6AA8E007D7236 /* Main Interface */,
 				A5C30A6423C68CDF00F4F7B0 /* ExtensionDelegate.swift */,
 				A5C30A6623C68CDF00F4F7B0 /* NotificationController.swift */,
 				A5C30A6823C68CDF00F4F7B0 /* ComplicationController.swift */,
@@ -666,9 +703,11 @@
 			files = (
 				A5C7FE8823CAAAC3006BB342 /* BackgroundCollectionViewCell.swift in Sources */,
 				A50CBDB323CE70D600EC484D /* Strings.swift in Sources */,
+				A583B51523D698B9007D7236 /* WatchConnectivity.swift in Sources */,
 				A50CBDB723CEA06900EC484D /* AlertControllerHelper.swift in Sources */,
 				A5C7FE8E23CAC97E006BB342 /* BackgroundCollectionEntry.swift in Sources */,
 				A50CBDB923CEA9AB00EC484D /* NotificationService.swift in Sources */,
+				A583B52023D6A64F007D7236 /* SharedDataModels.swift in Sources */,
 				A53E599623C9160F0094F6A4 /* DateHelper.swift in Sources */,
 				A53E599323C7E5F80094F6A4 /* TimerViewModel.swift in Sources */,
 				A53E598123C6A8570094F6A4 /* Router.swift in Sources */,
@@ -688,6 +727,7 @@
 				A53E599A23C92EE40094F6A4 /* SettingsViewModel.swift in Sources */,
 				A53E598D23C6B63B0094F6A4 /* ViewModelWrapper.swift in Sources */,
 				A53E598723C6AEB10094F6A4 /* PandaViewController.swift in Sources */,
+				A583B51A23D69FCB007D7236 /* SharedConstants.swift in Sources */,
 				A53E59BB23CA98510094F6A4 /* ZoomAnimator.swift in Sources */,
 				A50CBDB523CE77E000EC484D /* PandaViewModel.swift in Sources */,
 				A53E599C23C93CF40094F6A4 /* Config.swift in Sources */,
@@ -720,12 +760,18 @@
 				A583B50F23D67051007D7236 /* DateFormatterHelper.swift in Sources */,
 				A583B50E23D67042007D7236 /* ViewModelWrapper.swift in Sources */,
 				A583B51123D67060007D7236 /* DIStore.swift in Sources */,
+				A583B51623D69EA2007D7236 /* UserDefaultsWrapper.swift in Sources */,
 				A583B51223D67060007D7236 /* ServiceWrapper.swift in Sources */,
+				A5E9B74A23D6C6F40009BFE3 /* SharedDataModels.swift in Sources */,
 				A5C30A6723C68CDF00F4F7B0 /* NotificationController.swift in Sources */,
 				A5C30A6923C68CDF00F4F7B0 /* ComplicationController.swift in Sources */,
 				A5C30A6523C68CDF00F4F7B0 /* ExtensionDelegate.swift in Sources */,
+				A583B51823D69EB6007D7236 /* WatchConfig.swift in Sources */,
+				A583B52623D6ACC4007D7236 /* PhoneConnectivity.swift in Sources */,
+				A583B51E23D6A052007D7236 /* InterfaceViewModel.swift in Sources */,
 				A583B51023D67056007D7236 /* DateHelper.swift in Sources */,
 				A5C30A6323C68CDF00F4F7B0 /* InterfaceController.swift in Sources */,
+				A583B51B23D69FCB007D7236 /* SharedConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
