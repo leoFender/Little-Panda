@@ -9,6 +9,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         store.registerFactory { InterfaceViewModel() }
         connectivity = PhoneConnectivityService()
         store.register(connectivity!, type: PhoneConnectivityProvider.self)
+        store.register(ComplicationTemplatesService(), type: ComplicationTemplatesProvider.self)
         connectivity?.askPhoneForUpdates()
     }
 

@@ -74,6 +74,7 @@
 		A5C7FE8E23CAC97E006BB342 /* BackgroundCollectionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */; };
 		A5C7FE9023CAD59F006BB342 /* UIImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7FE8F23CAD59F006BB342 /* UIImageHelper.swift */; };
 		A5E9B74A23D6C6F40009BFE3 /* SharedDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583B51F23D6A64F007D7236 /* SharedDataModels.swift */; };
+		A5E9B74D23D7D6CB0009BFE3 /* CompTemplatesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E9B74C23D7D6CB0009BFE3 /* CompTemplatesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +193,7 @@
 		A5C7FE8723CAAAC3006BB342 /* BackgroundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundCollectionViewCell.xib; sourceTree = "<group>"; };
 		A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCollectionEntry.swift; sourceTree = "<group>"; };
 		A5C7FE8F23CAD59F006BB342 /* UIImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageHelper.swift; sourceTree = "<group>"; };
+		A5E9B74C23D7D6CB0009BFE3 /* CompTemplatesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompTemplatesProvider.swift; sourceTree = "<group>"; };
 		B2EAC3BA2FDAA9E7DBCAE84A /* Pods_Little_Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Little_Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -463,11 +465,11 @@
 		A5C30A6123C68CDF00F4F7B0 /* Little Panda WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A5E9B74B23D7D6B20009BFE3 /* Complications */,
 				A583B52323D6AA9E007D7236 /* Support */,
 				A583B52223D6AA8E007D7236 /* Main Interface */,
 				A5C30A6423C68CDF00F4F7B0 /* ExtensionDelegate.swift */,
 				A5C30A6623C68CDF00F4F7B0 /* NotificationController.swift */,
-				A5C30A6823C68CDF00F4F7B0 /* ComplicationController.swift */,
 				A5C30A6A23C68CDF00F4F7B0 /* Assets.xcassets */,
 				A5C30A6C23C68CE000F4F7B0 /* Info.plist */,
 				A5C30A6D23C68CE000F4F7B0 /* PushNotificationPayload.apns */,
@@ -483,6 +485,15 @@
 				A5C7FE8D23CAC97E006BB342 /* BackgroundCollectionEntry.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		A5E9B74B23D7D6B20009BFE3 /* Complications */ = {
+			isa = PBXGroup;
+			children = (
+				A5C30A6823C68CDF00F4F7B0 /* ComplicationController.swift */,
+				A5E9B74C23D7D6CB0009BFE3 /* CompTemplatesProvider.swift */,
+			);
+			path = Complications;
 			sourceTree = "<group>";
 		};
 		DEB76E41A7165CEE5000A487 /* Frameworks */ = {
@@ -757,6 +768,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A583B51323D67070007D7236 /* TimerViewModel.swift in Sources */,
+				A5E9B74D23D7D6CB0009BFE3 /* CompTemplatesProvider.swift in Sources */,
 				A583B50F23D67051007D7236 /* DateFormatterHelper.swift in Sources */,
 				A583B50E23D67042007D7236 /* ViewModelWrapper.swift in Sources */,
 				A583B51123D67060007D7236 /* DIStore.swift in Sources */,

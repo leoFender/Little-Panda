@@ -34,7 +34,7 @@ extension Date {
         return Calendar.current.date(byAdding: .hour, value: x, to: self) ?? Date()
     }
     
-    private static func findNewYear() -> Date? {
+    static func findNewYear() -> Date? {
         let calendar: Calendar = Calendar.current
         
         let today: Date = Date()
