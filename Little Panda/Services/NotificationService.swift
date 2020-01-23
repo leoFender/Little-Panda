@@ -110,6 +110,7 @@ struct NotificationHandler: NotificationService {
         if fireTime < 0 {
             return
         }
+        clear(.panda)
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: fireTime, repeats: false)
         
         let content = UNMutableNotificationContent()
@@ -125,6 +126,7 @@ struct NotificationHandler: NotificationService {
     }
     
     private func scheduleNewYear() {
+        clear(.newYear)
         for ntf in NewYearNotifications.fullList {
             UNUserNotificationCenter.current().add(ntf.formRequest(), withCompletionHandler: nil)
         }
