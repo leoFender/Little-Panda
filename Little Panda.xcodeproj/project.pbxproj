@@ -40,6 +40,7 @@
 		A53E59BB23CA98510094F6A4 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BA23CA98510094F6A4 /* ZoomAnimator.swift */; };
 		A53E59BD23CA9A290094F6A4 /* ZoomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BC23CA9A290094F6A4 /* ZoomTransitionController.swift */; };
 		A53E59C023CA9CAF0094F6A4 /* ZoomPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E59BF23CA9CAF0094F6A4 /* ZoomPreviewViewController.swift */; };
+		A555938B23D7F1B9009DF29A /* ComplTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555938A23D7F1B9009DF29A /* ComplTimelineProvider.swift */; };
 		A583B50E23D67042007D7236 /* ViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E598C23C6B63B0094F6A4 /* ViewModelWrapper.swift */; };
 		A583B50F23D67051007D7236 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599723C91DA30094F6A4 /* DateFormatterHelper.swift */; };
 		A583B51023D67056007D7236 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E599523C9160F0094F6A4 /* DateHelper.swift */; };
@@ -161,6 +162,7 @@
 		A53E59BA23CA98510094F6A4 /* ZoomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
 		A53E59BC23CA9A290094F6A4 /* ZoomTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionController.swift; sourceTree = "<group>"; };
 		A53E59BF23CA9CAF0094F6A4 /* ZoomPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomPreviewViewController.swift; sourceTree = "<group>"; };
+		A555938A23D7F1B9009DF29A /* ComplTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplTimelineProvider.swift; sourceTree = "<group>"; };
 		A583B51423D698B9007D7236 /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
 		A583B51723D69EB6007D7236 /* WatchConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConfig.swift; sourceTree = "<group>"; };
 		A583B51923D69FCB007D7236 /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 			children = (
 				A5C30A6823C68CDF00F4F7B0 /* ComplicationController.swift */,
 				A5E9B74C23D7D6CB0009BFE3 /* CompTemplatesProvider.swift */,
+				A555938A23D7F1B9009DF29A /* ComplTimelineProvider.swift */,
 			);
 			path = Complications;
 			sourceTree = "<group>";
@@ -774,6 +777,7 @@
 				A583B51123D67060007D7236 /* DIStore.swift in Sources */,
 				A583B51623D69EA2007D7236 /* UserDefaultsWrapper.swift in Sources */,
 				A583B51223D67060007D7236 /* ServiceWrapper.swift in Sources */,
+				A555938B23D7F1B9009DF29A /* ComplTimelineProvider.swift in Sources */,
 				A5E9B74A23D6C6F40009BFE3 /* SharedDataModels.swift in Sources */,
 				A5C30A6723C68CDF00F4F7B0 /* NotificationController.swift in Sources */,
 				A5C30A6923C68CDF00F4F7B0 /* ComplicationController.swift in Sources */,

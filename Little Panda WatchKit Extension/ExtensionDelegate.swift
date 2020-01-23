@@ -6,11 +6,14 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     
     func applicationDidFinishLaunching() {
         let store = DIStore()
-        store.registerFactory { InterfaceViewModel() }
-        connectivity = PhoneConnectivityService()
-        store.register(connectivity!, type: PhoneConnectivityProvider.self)
         store.register(ComplicationTemplatesService(), type: ComplicationTemplatesProvider.self)
+        store.register(ComplicationTimelineService(), type: ComplicationTimelineProvider.self)
+        
+        store.registerFactory { InterfaceViewModel() }
+        
+        connectivity = PhoneConnectivityService()
         connectivity?.askPhoneForUpdates()
+        store.register(connectivity!, type: PhoneConnectivityProvider.self)
     }
 
     func applicationDidBecomeActive() {

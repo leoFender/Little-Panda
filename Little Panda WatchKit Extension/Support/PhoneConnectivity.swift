@@ -1,5 +1,6 @@
 import WatchConnectivity
 import Foundation
+import ClockKit
 
 protocol PhoneConnectivityProvider: WCSessionDelegate {
     func askPhoneForUpdates()
@@ -35,7 +36,6 @@ class PhoneConnectivityService: NSObject, PhoneConnectivityProvider {
     }
     
     func askPhoneForUpdates() {
-        
         let message = [
             TransferModel.transferPandaKey: TransferModel.requestValue,
             TransferModel.transferComplicationKey: TransferModel.requestValue
@@ -62,6 +62,11 @@ class PhoneConnectivityService: NSObject, PhoneConnectivityProvider {
                 
                 WatchConfig.pandaAvailable = date
             }
+        }
+        
+        let server = CLKComplicationServer.sharedInstance()
+        if let activeComp = server.activeComplications {
+            _ = activeComp.map { server.reloadTimeline(for: $0) }
         }
         
         WatchConfig.initialDataLoaded = true

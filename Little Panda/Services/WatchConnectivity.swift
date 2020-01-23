@@ -3,6 +3,7 @@ import WatchConnectivity
 
 protocol WatchConnectivityProvider: NSObject, WCSessionDelegate {
     func send(_ model: TransferModel)
+    func pushComplicationInfo(_ model: TransferModel)
 }
 
 class WatchConnectivityService: NSObject, WatchConnectivityProvider, WCSessionDelegate {
@@ -74,5 +75,20 @@ class WatchConnectivityService: NSObject, WatchConnectivityProvider, WCSessionDe
         } catch {
             print(error)
         }
+    }
+    
+    func pushComplicationInfo(_ model: TransferModel) {
+        guard let activeSession = validSession else {
+            print("Cannot transfer data. Session is invalid")
+            return
+        }
+        
+        if activeSession.remainingComplicationUserInfoTransfers == 0 ||
+            activeSession.isComplicationEnabled ||
+            activeSession.isReachable {
+            send(model)
+        }
+        
+        activeSession.transferCurrentComplicationUserInfo([model.key: model.transferValue()])
     }
 }

@@ -57,7 +57,7 @@ class PandaViewModel {
         delegate?.didChangeState(newState)
         
         available = Date().plusXHours(x: 24)
-        watchConnection.send(.pandaAvailableDate(available))
+        watchConnection.pushComplicationInfo(.pandaAvailableDate(available))
         Config.pandaAvailable = available
         if Config.pandaNotification {
             notifications.schedule(.panda)
@@ -81,7 +81,7 @@ class PandaViewModel {
     func activateEmergency() {
         releaseTimers()
         available = Date.distantPast
-        watchConnection.send(.pandaAvailableDate(available))
+        watchConnection.pushComplicationInfo(.pandaAvailableDate(available))
         Config.pandaAvailable = available
         delegate?.didChangeState(.inactive)
         Config.emergencyAvailable = Date().plusXHours(x: 72)

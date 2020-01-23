@@ -71,7 +71,7 @@ class SettingsViewModel {
     
     func selectWatchTimerDisplay(_ index: Int) {
         let model: TransferModel = .complicationIndex(index)
-        watchConnection.send(model)
+        watchConnection.pushComplicationInfo(model)
         
         Config.watchFaceTimerIndex = index
     }
