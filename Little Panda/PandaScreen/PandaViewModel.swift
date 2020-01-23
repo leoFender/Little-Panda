@@ -38,7 +38,7 @@ class PandaViewModel {
     }
     
     func activatePanda() {
-        expirationTimer = Timer(timeInterval: 5.0, repeats: false) { [weak self] _ in
+        expirationTimer = Timer(timeInterval: 12.0, repeats: false) { [weak self] _ in
             self?.expirePanda()
         }
         RunLoop.main.add(expirationTimer!, forMode: RunLoop.Mode.common)
